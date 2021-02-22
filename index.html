@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Project Naggari</title>
+  <link rel="stylesheet" href="css/tei.css">
+  <script src="js/CETEI.js"></script>
+  <script>
+    let c = new CETEI();
+    c.addBehaviors(behaviors);
+    c.getHTML5('https://github.com/ProjectNaggari/Data/blob/master/xml/Naggari%20Collection_Prints_Main_17Jan2021.xml', function(data) {
+      document.getElementsByTagName("body")[0].appendChild(data);
+    });</script>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <h1>Project Naggari</h1>
+  <p>This is the website for Project Naggari</p>
+
+  <p>The Books of Shaykh Muṣṭafā Salāmah al-Najjārī (d.1870)<p>
+  <p>An Extended Bibliographical Database, vol. 1: The Printed Books<p>
+
 </body>
 </html>
