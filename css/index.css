@@ -22,3 +22,31 @@ tei-lb:before {
   white-space: pre;
   content: "\A";
 }
+
+
+tei-table {
+  margin-top: 30px;
+  display:table;
+  border-collapse:separate;
+  border-spacing: 60px;
+  font-size: 12px;
+}
+
+
+td {
+  border-bottom: thin solid black;
+}
+
+th {
+  position: sticky;
+  top: 0;
+}
+
+tr{
+  cursor: pointer;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: black;
+  font-style: oblique;
+}
