@@ -50,3 +50,7 @@ tr{
   color: black;
   font-style: oblique;
 }
+
+td:nth-child(4) {
+  display: none;
+}
