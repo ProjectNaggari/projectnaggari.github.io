@@ -47,6 +47,11 @@
   .sidenav a {font-size: 18px;}
 }
 
+
+h1 {
+    text-align:center;
+}
+
 tei-div {
   display: block;
 }
