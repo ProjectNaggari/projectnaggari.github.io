@@ -51,8 +51,11 @@ h1 {
     text-align:center;
 }
 
+tei-body {
+  display:none;
+}
 tei-div {
-  display: block;
+  display: none;
 }
 tei-p {
   display: block;
