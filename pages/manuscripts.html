@@ -7,7 +7,7 @@
   <script>
     let c = new CETEI();
     c.getHTML5('https://projectnaggari.github.io/naggari_source/naggari_manuscripts.TEIP5.xml', function(data) {
-      document.getElementsByTagName("div#main").appendChild(data);
+      document.querySelector("div#main").appendChild(data);
     });</script>
 
 
