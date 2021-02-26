@@ -56,7 +56,7 @@ h3 {
 }
 
 tei-div {
-  display: block;
+  display: none;
 }
 tei-p {
   display: block;
