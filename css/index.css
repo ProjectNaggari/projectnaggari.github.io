@@ -1,9 +1,15 @@
 
-img {
+/* img {
   max-width:10%;
   max-height:10%;
-}
+} */
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .sidenav {
   height: 100%; /* 100% Full-height */
