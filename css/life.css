@@ -62,6 +62,29 @@ h3 {
 tei-body {
   display:none;
 }
+tei-front {
+  display: none;
+}
+
+tei-div#nCetei {
+  display: none;
+}
+
+tei-div#nIntro {
+  display: none;
+}
+
+tei-div#nIntro {
+  display: none;
+}
+
+tei-div#nCopyright {
+  display: none;
+}
+
+tei-div#nAbbrev {
+  display: none;
+}
 
 tei-p {
   display: block;
@@ -69,7 +92,7 @@ tei-p {
   margin-bottom: .5em;
 }
 
-tei-div#life {
+tei-div#nlife {
   display: block;
 }
 
