@@ -62,31 +62,16 @@ h3 {
 tei-body {
   display:none;
 }
-tei-div {
-  display: none;
-}
+
 tei-p {
   display: block;
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-tei-list[type=simple] {
-  list-style-type: none;
+tei-div#life {
+  display: block;
 }
-tei-list[type=simple]>tei-item {
-  display: list-item;
-}
-
-tei-hi[rend=italics] {
-  font-style: italic;
-}
-
-tei-lb:before {
-  white-space: pre;
-  content: "\A";
-}
-
 
 tei-table {
   display: none;
