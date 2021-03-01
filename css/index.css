@@ -80,3 +80,15 @@ tei-p {
 tei-body {
   display: none;
 }
+
+tei-div#nFront {
+  text-align: center;
+  display: block;
+margin-top: 1.33em;
+margin-bottom: 1.33em;
+margin-left: 60px;
+margin-right: 60px;
+font-weight: bold;
+font-family: serif;
+word-wrap: break-word;
+}
