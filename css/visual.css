@@ -59,62 +59,15 @@ h3 {
     text-align:center;
 }
 
-tei-body {
-  display:none;
+h4 {
+    text-align:center;
 }
-tei-div {
-  display: none;
-}
-tei-p {
+
+.center {
   display: block;
-  margin-top: .5em;
-  margin-bottom: .5em;
-}
-
-tei-list[type=simple] {
-  list-style-type: none;
-}
-tei-list[type=simple]>tei-item {
-  display: list-item;
-}
-
-tei-hi[rend=italics] {
-  font-style: italic;
-}
-
-tei-lb:before {
-  white-space: pre;
-  content: "\A";
-}
-
-
-tei-table {
-  margin-top: 30px;
-  display:table;
-  border-collapse:separate;
-  border-spacing: 60px;
-  font-size: 12px;
-}
-
-
-td {
-  border-bottom: thin solid black;
-}
-
-th {
-  position: sticky;
-  top: 0;
-}
-
-tr{
-  cursor: pointer;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  color: black;
-  font-style: oblique;
-}
-
-td:nth-child(4) {
-  display: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  height:50%;
 }
