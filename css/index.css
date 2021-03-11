@@ -92,3 +92,7 @@ tei-p {
 tei-body {
   display: none;
 }
+
+#nStandOff {
+  display: none;
+}
