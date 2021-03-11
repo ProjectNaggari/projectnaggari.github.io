@@ -82,3 +82,7 @@ tei-div {
 tei-table {
   display: none;
 }
+
+#nStandOff {
+  display: none;
+}

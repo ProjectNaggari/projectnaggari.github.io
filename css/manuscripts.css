@@ -148,3 +148,7 @@ tei-div#nTitleMS {
   font-family: serif;
   word-wrap: break-word;
 }
+
+#nStandOff {
+  display: none;
+}
