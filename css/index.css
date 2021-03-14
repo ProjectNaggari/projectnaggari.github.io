@@ -106,6 +106,14 @@ tei-div#nLife {
   display: none;
 }
 
+tei-div#nSource {
+  display: none;
+}
+
+tei-div#nAbbrev {
+  display: none;
+}
+
 tei-p {
   display: block;
   margin-top: .5em;
@@ -118,4 +126,10 @@ tei-body {
 
 #nStandOff {
   display: none;
+}
+
+tei-div#nLife {
+  display: block;
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
