@@ -133,3 +133,11 @@ tei-div#nIntro {
   margin-top: .5em;
   margin-bottom: .5em;
 }
+
+#warn {
+  display: block;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-weight: bold;
+
+}
