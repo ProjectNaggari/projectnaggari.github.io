@@ -152,3 +152,14 @@ tei-div#nTitleMS {
 #nStandOff {
   display: none;
 }
+
+#warn {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-weight: bold;
+
+}
