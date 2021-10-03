@@ -146,6 +146,6 @@ tei-div#nIntro {
 
 }
 
-head title {
+tei-head tei-title {
   display: block;
 }
