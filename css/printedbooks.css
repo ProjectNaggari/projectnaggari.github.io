@@ -159,6 +159,6 @@ tei-biblStruct {
   display: inline;
 }
 
-tei-note#sealsOfOwners {
+tei-note[type=sealsOfOwners] {
   display: none;
 }
