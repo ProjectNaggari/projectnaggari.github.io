@@ -162,3 +162,7 @@ tei-biblStruct {
 tei-note[type=sealsOfOwners] {
   display: none;
 }
+
+tei-note[type=inscriptionsOfOwnership] {
+  display: none;
+}
