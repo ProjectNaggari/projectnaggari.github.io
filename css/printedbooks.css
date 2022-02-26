@@ -167,7 +167,8 @@ tei-note[type=inscriptionsOfOwnership] {
   display: none;
 }
 
-#nTables * {
+#nTables print {
+     * {
     visibility: hidden;
   }
 
@@ -177,3 +178,4 @@ tei-note[type=inscriptionsOfOwnership] {
   tei-title[xml:lang=ar source=#d] * {
     visibility: visible;
   }
+}
