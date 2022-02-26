@@ -167,7 +167,7 @@ tei-note[type=inscriptionsOfOwnership] {
   display: none;
 } */
 
-#nTables {
+#nTables :not(tei-idno){
      display: none;
   }
 
