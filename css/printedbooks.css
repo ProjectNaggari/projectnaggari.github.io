@@ -166,3 +166,14 @@ tei-note[type=sealsOfOwners] {
 tei-note[type=inscriptionsOfOwnership] {
   display: none;
 }
+
+#nTables * {
+    visibility: hidden;
+  }
+
+  tei-idno * {
+    visibility: visible;
+  }
+  tei-title[xml:lang=ar source=#d] * {
+    visibility: visible;
+  }
