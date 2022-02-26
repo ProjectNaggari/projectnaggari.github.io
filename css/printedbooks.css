@@ -159,21 +159,21 @@ tei-biblStruct {
   display: inline;
 }
 
-tei-note[type=sealsOfOwners] {
+/* tei-note[type=sealsOfOwners] {
   display: none;
 }
 
 tei-note[type=inscriptionsOfOwnership] {
   display: none;
-}
+} */
 
 #nTables {
      display: none;
   }
 
-  #nTables tei-idno {
+tei-idno #nTables {
     display: block;
   }
-  #nTables tei-title[xml:lang=ar source=#d] {
+tei-title[xml:lang=ar source=#d] #nTables {
     display: block;
   }
