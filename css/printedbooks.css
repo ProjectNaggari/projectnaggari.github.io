@@ -151,7 +151,7 @@ tei-idno[n=titleID] {
   visibility: visible;
 }
 
-tei-title[lang=ar source=#d] {
+tei-title[source=#d] {
   visibility: visible;
 }
 
