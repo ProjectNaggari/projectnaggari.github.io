@@ -170,7 +170,7 @@ tei-note[type=inscriptionsOfOwnership] {
 #nTables {
      visibility: hidden;
   }
-tei-idno {
+tei-idno[n=titleID] {
   visibility: visible;
 }
 
