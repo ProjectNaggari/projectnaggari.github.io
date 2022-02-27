@@ -94,23 +94,7 @@ tei-table {
 }
 
 
-td {
-  border-bottom: thin solid black;
-}
 
-th {
-  position: sticky;
-  top: 0;
-}
-
-tr{
-  cursor: pointer;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  color: black;
-  font-style: oblique;
-}
 
 tei-div#nT1Table {
   text-align: center;
@@ -123,13 +107,6 @@ tei-div#nT1Table {
   word-wrap: break-word;
 }
 
-td:nth-child(4) {
-  display: none;
-}
-
-td:nth-child(7) {
-  display: none;
-}
 
 #nStandOff {
   display: none;
