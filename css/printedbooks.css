@@ -125,7 +125,7 @@ tei-biblStruct {
   display: block;
 }
 
-tei-biblStruct * {
+tei-biblStruct > * > * {
   display: none;
 }
 /* tei-note[type=sealsOfOwners] {
@@ -142,11 +142,11 @@ tei-note[type=inscriptionsOfOwnership] {
 */
 
 tei-idno[n=titleID] {
-  display: inline !important;
+  display: inline;
 }
 
 tei-title[source="#d"][lang=ar] {
-  display: inline !important;
+  display: inline;
 }
 
 
