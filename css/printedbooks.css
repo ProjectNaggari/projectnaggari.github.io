@@ -160,7 +160,7 @@ tei-idno[n=titleID] {
   visibility: visible;
 }
 
-tei-title[source=#d] {
+tei-title[source="#d"] {
   visibility: visible;
 }
 
