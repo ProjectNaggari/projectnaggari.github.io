@@ -149,6 +149,10 @@ tei-title[source="#d"][lang=ar] {
   display: inline;
 }
 
+tei-ref[subtype=originalLink] {
+  display: inline;
+}
+
 
 /* tei-idno #nTables {
     display: block;
