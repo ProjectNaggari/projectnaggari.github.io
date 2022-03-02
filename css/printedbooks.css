@@ -142,9 +142,13 @@ tei-div#nT1Table {
 }
 
 tei-biblStruct {
-  display: inline;
+  display: block;
 }
 
+
+tei-biblStruct * {
+  display: none;
+}
 /* tei-note[type=sealsOfOwners] {
   display: none;
 }
@@ -153,15 +157,17 @@ tei-note[type=inscriptionsOfOwnership] {
   display: none;
 } */
 
-#nTables {
-     visibility: hidden;
+/* #nTables {
+     display: none;
   }
+*/
+
 tei-idno[n=titleID] {
-  visibility: visible;
+  display: inline;
 }
 
 tei-title[source="#d"][lang=ar] {
-  visibility: visible;
+  display: inline;
 }
 
 
