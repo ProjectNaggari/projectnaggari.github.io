@@ -85,27 +85,7 @@ tei-lb:before {
 }
 
 
-tei-table {
-  margin-top: 30px;
-  display:table;
-  border-collapse:separate;
-  border-spacing: 60px;
-  font-size: 12px;
-}
 
-
-
-
-tei-div#nT1Table {
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1.33em;
-  font-weight: bold;
-  font-family: serif;
-  word-wrap: break-word;
-}
 
 
 #nStandOff {
