@@ -136,6 +136,17 @@ tei-div#nIntro {
   font-size: 18;
 }
 
+#IntroHead {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.33em;
+  font-weight: bold;
+  font-family: serif;
+  word-wrap: break-word;
+}
+
 #warn {
   display: block;
   text-align: center;
