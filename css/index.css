@@ -133,6 +133,10 @@ tei-div#nIntro {
   display: none;
 }
 
+tei-div#nTranslit {
+  display: none;
+}
+
 #nKathryn {
   text-align: center;
   display: block;
