@@ -147,7 +147,9 @@ body {
     word-wrap: break-word;
   }
   
-
+  tei-div#nTranslit {
+    display: none;
+  }
   
   tei-head tei-title {
     display: block;
