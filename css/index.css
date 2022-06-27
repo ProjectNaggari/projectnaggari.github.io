@@ -137,7 +137,10 @@ tei-div#nTranslit {
   display: none;
 }
 
-#nKathryn {
+
+
+tei-div#nKathryn {
+
   text-align: center;
   display: block;
   margin-left: auto;
@@ -147,13 +150,12 @@ tei-div#nTranslit {
   font-family: serif;
   word-wrap: break-word;
 
-  background-color: lightgrey;
-  width: 300px;
-  border: 15px solid black;
-  padding: 50px;
-  margin: 20px;
+background-color: lightgrey;
+width: 300px;
+border: 15px solid black;
+padding: 50px;
+margin: 20px;
 }
-
 
 
 tei-head tei-title {
