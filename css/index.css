@@ -133,6 +133,17 @@ tei-div#nIntro {
   display: none;
 }
 
+#nKathryn {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.33em;
+  font-weight: bold;
+  font-family: serif;
+  word-wrap: break-word;
+}
+
 tei-head tei-title {
   display: block;
 }
