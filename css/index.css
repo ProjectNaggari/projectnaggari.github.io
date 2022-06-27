@@ -146,7 +146,15 @@ tei-div#nTranslit {
   font-weight: bold;
   font-family: serif;
   word-wrap: break-word;
+
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid black;
+  padding: 50px;
+  margin: 20px;
 }
+
+
 
 tei-head tei-title {
   display: block;
