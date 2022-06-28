@@ -133,7 +133,9 @@ body {
     display: block;
     margin-top: .5em;
     margin-bottom: .5em;
-    font-size: 18;
+    font-size: 20;
+    text-indent: 50px;
+    text-align: justify;
   }
   
   #IntroHead {
