@@ -87,6 +87,10 @@ body {
     display: none;
   }
 
+  tei-div#nTranslit {
+    display: none;
+  }
+
   tei-div#nCopyright {
     display: none;
   }
