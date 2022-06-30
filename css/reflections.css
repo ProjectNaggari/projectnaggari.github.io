@@ -79,6 +79,14 @@ body {
     display: none;
   }
 
+  tei-div#nLife {
+    display: none;
+  }
+
+  tei-div#nSource {
+    display: none;
+  }
+
   tei-div#nCopyright {
     display: none;
   }
