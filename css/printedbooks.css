@@ -153,6 +153,9 @@ tei-ref[subtype=originalLink] {
   display: inline;
 }
 
+tei-div#nReflect {
+  display: none;
+}
 
 /* tei-idno #nTables {
     display: block;
@@ -160,3 +163,7 @@ tei-ref[subtype=originalLink] {
 tei-title[xml:lang=ar source=#d] #nTables {
     display: block;
   }
+
+  tei-div#nReflect {
+  display: none;
+}

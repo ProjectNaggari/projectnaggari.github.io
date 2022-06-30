@@ -157,4 +157,6 @@ body {
   tei-head tei-title {
     display: block;
   }
-  
+  tei-div#nReflect {
+    display: none;
+  }

@@ -97,3 +97,7 @@ tei-table {
   font-weight: bold;
 color: red;
 }
+
+tei-div#nReflect {
+  display: none;
+}

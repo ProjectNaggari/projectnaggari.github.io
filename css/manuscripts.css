@@ -163,3 +163,7 @@ tei-div#nTitleMS {
   font-weight: bold;
 color: red;
 }
+
+tei-div#nReflect {
+  display: none;
+}

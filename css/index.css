@@ -139,6 +139,9 @@ tei-div#nTranslit {
   display: none;
 }
 
+tei-div#nReflect {
+  display: none;
+}
 
 
 tei-div#nKathryn {
