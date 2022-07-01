@@ -139,3 +139,34 @@ body {
   #nLife {
     display: none;
   }
+
+  tei-div#nReflectTitle {
+
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-weight: bold;
+  }
+
+  tei-div#nReflectNames {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-weight: bold;
+  }
+
+  tei-div#nReflectText {
+    display: block;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-size: 20px;
+    text-indent: 50px;
+    text-align: justify;
+    line-height: 1.2;
+  }
