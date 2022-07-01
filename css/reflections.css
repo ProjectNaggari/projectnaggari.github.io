@@ -63,7 +63,7 @@ body {
     display:none;
   }
   tei-front {
-    display: block;
+    display: none;
   }
   
   tei-div#nCetei {
@@ -106,7 +106,7 @@ body {
   }
   
   tei-div#nLife {
-    display: block;
+    display: none;
   }
   
   tei-table {
@@ -117,7 +117,7 @@ body {
   }
   
   #warn {
-    display: block;
+    display: none;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
