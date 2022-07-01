@@ -63,7 +63,7 @@ body {
     display:none;
   }
   tei-front {
-    display: none;
+    display: block;
   }
   
   tei-div#nCetei {
