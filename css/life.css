@@ -108,14 +108,11 @@ tei-div#nCetei {
 
 tei-div#nSource {
   display: none;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  font-size: 20px;
-  text-indent: 50px;
-  text-align: justify;
-  line-height: 1.4;
-  margin-left: 40;
-  margin-right: 40;
+  
+}
+
+tei-div#nTranslit {
+  display: none;
 }
 
 tei-div#nAbbrev {
