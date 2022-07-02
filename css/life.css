@@ -63,7 +63,7 @@ tei-body {
   display:none;
 }
 tei-front {
-  display: none;
+  display: block;
 }
 
 tei-div#nCetei {
@@ -100,16 +100,6 @@ tei-table {
   display: none;
 }
 
-#warn {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  font-weight: bold;
-  color: red;
-}
 tei-div#nReflect {
   display: none;
 }
