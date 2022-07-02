@@ -1,6 +1,8 @@
 body {
     background-color: #ffffff;
-    margin: 50px;
+    margin: 60px;
+    font-size: 20px;
+    line-height: 1.2;
   }
   
   .center {
@@ -111,12 +113,7 @@ body {
     display: block;
     margin-top: .5em;
     margin-bottom: .5em;
-    font-size: 20px;
-    text-indent: 50px;
     text-align: justify;
-    line-height: 1.4;
-    margin-left: 40;
-    margin-right: 40;
   }
   
   tei-div#nAbbrev {
@@ -141,12 +138,10 @@ body {
     display: block;
     margin-top: .5em;
     margin-bottom: .5em;
-    font-size: 20px;
+
     text-indent: 50px;
     text-align: justify;
     line-height: 1.4;
-    margin-left: 60;
-    margin-right: 60;
   }
   
   #IntroHead {
@@ -178,12 +173,10 @@ body {
     display: block;
     margin-top: .5em;
     margin-bottom: .5em;
-    font-size: 20px;
+    
     text-indent: 50px;
     text-align: justify;
     line-height: 1.4;
-    margin-left: 40;
-    margin-right: 40;
   }
   
   #nTranslitHead {
