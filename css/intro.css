@@ -161,6 +161,19 @@ body {
     word-wrap: break-word;
   }
   
+#nSourceHead {
+  text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.33em;
+    font-weight: bold;
+    font-size: medium;
+    font-family: serif;
+    word-wrap: break-word;
+
+}
+
   tei-div#nTranslit {
     display: none;
   }
