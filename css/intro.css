@@ -175,9 +175,30 @@ body {
 }
 
   tei-div#nTranslit {
-    display: none;
+    display: block;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-size: 20px;
+    text-indent: 50px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-left: 40;
+    margin-right: 40;
   }
   
+  #nTranslitHead {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.33em;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: serif;
+    word-wrap: break-word;
+
+  }
+
   tei-head tei-title {
     display: block;
   }
