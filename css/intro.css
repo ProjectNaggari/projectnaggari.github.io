@@ -169,6 +169,15 @@ body {
 
 }
 
+tei-div#nSource{
+  display: block;
+  margin-top: .5em;
+  margin-bottom: .5em;
+
+  text-indent: 50px;
+  text-align: justify;
+  line-height: 1.4;
+}
   tei-div#nTranslit {
     display: block;
     margin-top: .5em;
