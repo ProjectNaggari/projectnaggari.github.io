@@ -140,7 +140,7 @@ body {
     display: none;
   }
 
-  tei-div#nReflectTitle {
+ #nReflectTitle {
 
     display: block;
     text-align: center;
