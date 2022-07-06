@@ -169,7 +169,7 @@ body {
 
 }
 
-tei-hi[rend=italic] { text-decoration: italic; }
+tei-hi[rend=italic] { font-style: italic; }
 
 tei-div#nSource{
   display: block;
