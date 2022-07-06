@@ -169,6 +169,8 @@ body {
 
 }
 
+tei-hi[rend=italic] { text-decoration: italic; }
+
 tei-div#nSource{
   display: block;
   margin-top: .5em;
