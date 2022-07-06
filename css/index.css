@@ -105,6 +105,16 @@ tei-div#nCetei {
   word-wrap: break-word;
 }
 
+tei-div#nPubRef {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.33em;
+  font-weight: bold;
+  font-family: serif;
+  word-wrap: break-word;
+}
 
 tei-div#nLife {
   display: none;
