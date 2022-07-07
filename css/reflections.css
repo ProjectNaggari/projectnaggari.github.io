@@ -1,7 +1,13 @@
 body {
     background-color: #ffffff;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 20px;
+    line-height: 1.2;
   }
   
+  tei-hi[rend=italic] { font-style: italic; }
+
   .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -168,4 +174,12 @@ body {
     text-indent: 50px;
     text-align: justify;
     line-height: 1.2;
+  }
+
+  tei-div#nKathryn {
+    display: none;
+  }
+
+  tei-div#nPubRef {
+    display: none;
   }

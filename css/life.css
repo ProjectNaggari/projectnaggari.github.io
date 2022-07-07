@@ -1,9 +1,13 @@
 body {
   background-color: #ffffff;
-  margin: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
   font-size: 20px;
   line-height: 1.2;
 }
+
+
+tei-hi[rend=italic] { font-style: italic; }
 
 .sidenav {
   height: 100%; /* 100% Full-height */
