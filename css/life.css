@@ -165,3 +165,10 @@ tei-div#nLife {
   word-wrap: break-word;
 }
 
+tei-div#nKathryn {
+  display: none;
+}
+
+tei-div#nPubRef {
+  display: none;
+}
