@@ -176,3 +176,5 @@ padding: 5px;
 tei-head tei-title {
   display: block;
 }
+
+tei-hi[rend=italic] { font-style: italic; }

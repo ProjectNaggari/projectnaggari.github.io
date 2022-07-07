@@ -1,6 +1,7 @@
 body {
     background-color: #ffffff;
-    margin: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -207,5 +208,13 @@ tei-div#nSource{
     display: block;
   }
   tei-div#nReflect {
+    display: none;
+  }
+
+  tei-div#nKathryn {
+    display: none;
+  }
+
+  tei-div#nPubRef {
     display: none;
   }
