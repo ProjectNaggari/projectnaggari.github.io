@@ -117,7 +117,6 @@ tei-lb:before {
 
 tei-biblStruct {
   display: block;
-
 }
 
 tei-biblStruct > * > * {
@@ -143,15 +142,15 @@ tei-div#nTables {
 }
 
 tei-idno[n=titleID] {
-  display: inline;
+  display: inline-grid;
 }
 
 tei-title[source="#d"][lang=ar] {
-  display: inline;
+  display: inline-grid;
 }
 
 tei-ref[subtype=originalLink] {
-  display: inline;
+  display: inline-grid;
 }
 
 tei-div#nReflect {
