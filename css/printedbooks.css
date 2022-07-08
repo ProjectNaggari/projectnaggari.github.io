@@ -123,6 +123,7 @@ tei-lb:before {
 
 tei-biblStruct {
   display: block;
+
 }
 
 tei-biblStruct > * > * {
@@ -141,6 +142,10 @@ tei-note[type=inscriptionsOfOwnership] {
   }
 */
 
+tei-div#nTables {
+  display: table;
+}
+
 tei-idno[n=titleID] {
   display: inline;
 }
@@ -156,6 +161,9 @@ tei-ref[subtype=originalLink] {
 tei-div#nReflect {
   display: none;
 }
+
+
+
 
 /* tei-idno #nTables {
     display: block;
