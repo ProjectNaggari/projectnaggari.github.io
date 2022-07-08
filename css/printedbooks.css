@@ -1,5 +1,9 @@
 body {
   background-color: #ffffff;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .sidenav {
@@ -92,16 +96,6 @@ tei-lb:before {
   display: none;
 }
 
-#warn {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  font-weight: bold;
-  color: red;
-}
 
 #nT1Title {
   display: block;
@@ -144,6 +138,8 @@ tei-note[type=inscriptionsOfOwnership] {
 
 tei-div#nTables {
   display: table;
+  margin-top: 1.2em;
+  margin-left: 50px;
 }
 
 tei-idno[n=titleID] {
