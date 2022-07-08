@@ -152,8 +152,8 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
     font-weight: bold;
   }
 
@@ -163,7 +163,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: .5em;
-    margin-bottom: .5em;
+    margin-bottom: 1.2em;
   }
 
   tei-div#nReflectText {
@@ -183,3 +183,5 @@ body {
   tei-div#nPubRef {
     display: none;
   }
+
+  
