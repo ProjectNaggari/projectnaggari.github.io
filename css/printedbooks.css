@@ -135,21 +135,25 @@ tei-note[type=inscriptionsOfOwnership] {
 */
 
 tei-div#nTables {
-  display: table-row;
+  display: block;
   margin-top: 1.2em;
   margin-left: 50px;
 }
 
+#d1e289 {
+  display: table;
+}
+
 tei-idno[n=titleID] {
-  display: inline;
+  display: table-cell;
 }
 
 tei-title[source="#d"][lang=ar] {
-  display: inline;
+  display: table-cell;
 }
 
 tei-ref[subtype=originalLink] {
-  display: inline;
+  display: table-cell;
 }
 
 tei-div#nReflect {
