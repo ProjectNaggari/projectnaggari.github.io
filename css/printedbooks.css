@@ -144,6 +144,10 @@ tei-div#nTables {
   display: table;
 }
 
+tei-biblStruct {
+  display: table-row;
+}
+
 tei-idno[n=titleID] {
   display: table-cell;
 }
