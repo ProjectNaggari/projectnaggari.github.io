@@ -144,7 +144,7 @@ tei-div#nTables {
   display: table;
 }
 
-tei-biblStruct {
+tei-biblStruct[type=row] {
   display: table-row;
 }
 
