@@ -137,22 +137,12 @@ td:nth-child(14) {
   display: none;
 }
 
-tei-div#nTitleMS {
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1.33em;
-  font-weight: bold;
-  font-family: serif;
-  word-wrap: break-word;
-}
-
-#nStandOff {
+tei-front {
   display: none;
 }
 
-tei-front {
+
+#nStandOff {
   display: none;
 }
 
