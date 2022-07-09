@@ -157,7 +157,18 @@ tei-div#nReflect {
   display: none;
 }
 
-
+#nTablesHead {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.33em;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: serif;
+  word-wrap: break-word;
+}
 
 
 /* tei-idno #nTables {
