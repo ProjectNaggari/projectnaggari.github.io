@@ -105,7 +105,6 @@ th {
 }
 
 tr{
-  cursor: pointer;
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
@@ -153,6 +152,9 @@ tei-div#nTitleMS {
   display: none;
 }
 
+tei-front {
+  display: none;
+}
 
 tei-div#nReflect {
   display: none;
