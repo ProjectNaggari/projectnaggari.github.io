@@ -96,27 +96,6 @@ tei-lb:before {
 }
 
 
-#nT1Title {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: .5em;
-  margin-bottom: .5em;
-}
-
-#nT1Desc {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: .5em;
-  margin-bottom: .5em;
-}
-
-tei-biblStruct {
-  display: block;
-}
 
 tei-biblStruct > * > * {
   display: none;
