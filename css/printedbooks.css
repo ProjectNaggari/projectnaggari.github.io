@@ -156,6 +156,10 @@ tei-title[source="#d"][lang=ar] {
   display: table-cell;
 }
 
+tei-title[source="d"][lang=ar-Latn-x-lc] {
+  display: table-cell;
+}
+
 tei-ref[subtype=originalLink] {
   display: table-cell;
 }
@@ -177,6 +181,9 @@ tei-div#nReflect {
   word-wrap: break-word;
 }
 
+.unfold {
+display:block;
+}
 
 /* tei-idno #nTables {
     display: block;
