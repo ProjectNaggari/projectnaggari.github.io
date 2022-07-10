@@ -131,13 +131,14 @@ tei-idno[n=titleID] {
   display: table-cell;
 }
 
+tei-title[source="#d"][lang=ar-Latn-x-lc] {
+  display: table-cell;
+}
+
 tei-title[source="#d"][lang=ar] {
   display: table-cell;
 }
 
-tei-title[source="d"][lang=ar-Latn-x-lc] {
-  display: table-cell;
-}
 
 tei-ref[subtype=originalLink] {
   display: table-cell;
