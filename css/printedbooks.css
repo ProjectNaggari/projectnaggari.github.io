@@ -131,7 +131,7 @@ tei-biblStruct[type=row] {
 
 tei-idno[n=titleID] {
   display: table-cell;
-  margin-left: auto;
+  margin-left: 60px;
 }
 
 tei-title[source="#d"][lang=ar-Latn-x-lc] {
@@ -145,6 +145,9 @@ tei-title[source="#d"][lang=ar] {
   margin-left: 15px;
 }
 
+tei-title + tei-title {
+  margin-left: 15px;
+}
 
 tei-ref[subtype=originalLink] {
   display: none;
