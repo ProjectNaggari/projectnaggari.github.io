@@ -141,7 +141,7 @@ tei-title[source="#d"][lang=ar] {
 
 
 tei-ref[subtype=originalLink] {
-  display: table-cell;
+  display: none;
 }
 
 tei-div#nReflect {
