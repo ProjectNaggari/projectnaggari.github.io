@@ -131,15 +131,18 @@ tei-biblStruct[type=row] {
 
 tei-idno[n=titleID] {
   display: table-cell;
+  margin-left: auto;
 }
 
 tei-title[source="#d"][lang=ar-Latn-x-lc] {
   display: table-cell;
   font-style: italic;
+  margin-left: 15px;
 }
 
 tei-title[source="#d"][lang=ar] {
   display: table-cell;
+  margin-left: 15px;
 }
 
 
