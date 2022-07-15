@@ -123,6 +123,8 @@ tei-div#nTables {
   display: table;
 }
 
+tei-hi[rend=italic] { font-style: italic; }
+
 tei-biblStruct[type=row] {
   display: table-row;
 }
@@ -133,6 +135,7 @@ tei-idno[n=titleID] {
 
 tei-title[source="#d"][lang=ar-Latn-x-lc] {
   display: table-cell;
+  font-weight: italic;
 }
 
 tei-title[source="#d"][lang=ar] {
