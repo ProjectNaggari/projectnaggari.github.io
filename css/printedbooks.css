@@ -135,7 +135,7 @@ tei-idno[n=titleID] {
 
 tei-title[source="#d"][lang=ar-Latn-x-lc] {
   display: table-cell;
-  font-weight: italic;
+  font-style: italic;
 }
 
 tei-title[source="#d"][lang=ar] {
