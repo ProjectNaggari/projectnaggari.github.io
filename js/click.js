@@ -1,13 +1,29 @@
 
 
+const element = document.querySelectorAll("[xml:lang=ar-Latn-x-lc]");
+element.addEventListener("click", myFunction);
+
+
 
 function myFunction() {
-  document.getElementById("myCheck").click();
+  
+  document.querySelectorAll("[xml:lang=ar-Latn-x-lc]").click();
+
+  console.log(div.outerHTML);
+
+  div.classList.toggle("visible");
+
 }
+
+
+
+
+
 
 
 //Basically to make something work like that, you want to add a click event to the element in question that removes or adds a class for which you have a rule in the CSS that sets the visibility (like display: none / display: block). https://developer.mozilla.org/en-US/docs/Web/API/Element/classList has a toggle method that enables this—adding or removing a class. //
 
+//
 
 const div = document.createElement('div');
 div.className = 'foo';
@@ -41,3 +57,4 @@ div.classList.remove(...cls);
 
 // replace class "foo" with class "bar"
 div.classList.replace("foo", "bar");
+//
