@@ -48,6 +48,20 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
 }
+
+const element = document.querySelectorAll("[xml:lang=ar-Latn-x-lc]");
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+  
+  document.querySelectorAll("[xml:lang=ar-Latn-x-lc]").click();
+
+  console.log(div.outerHTML);
+
+  div.classList.toggle("visible");
+
+}
+
 </script>
 
 </body>
