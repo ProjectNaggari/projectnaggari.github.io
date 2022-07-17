@@ -78,23 +78,16 @@ tei-list[type=simple]>tei-item {
   display: list-item;
 }
 
-tei-hi[rend=italics] {
-  font-style: italic;
-}
-
 tei-lb:before {
   white-space: pre;
   content: "\A";
 }
 
-
-
-
+tei-hi[rend=italic] { font-style: italic; }
 
 #nStandOff {
   display: none;
 }
-
 
 
 tei-biblStruct > * > * {
@@ -114,6 +107,7 @@ tei-note[type=inscriptionsOfOwnership] {
 */
 
 tei-div#nTables {
+  text-align: center;
   display: table;
   border: 1px solid black;
   margin-top: 1.2em;
@@ -121,15 +115,6 @@ tei-div#nTables {
   margin-right: auto;
 }
 
-#d1e289 {
-  display: ;
-}
-
-tei-hi[rend=italic] { font-style: italic; }
-
-tei-biblStruct[type=row] {
-  display: table-row;
-}
 
 tei-idno[n=titleID] {
   display: table-cell;
