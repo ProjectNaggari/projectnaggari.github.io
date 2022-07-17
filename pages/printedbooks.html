@@ -9,6 +9,7 @@
     c.getHTML5('https://projectnaggari.github.io/naggari_source/naggari_printsBiblStruct_Master.xml', function(data) {
       document.querySelector("div#main").appendChild(data);
     });</script>
+  <script src="../js/click.js"></script>
 
 
   <meta charset="UTF-8">
@@ -47,19 +48,6 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
-}
-
-const element = document.querySelectorAll("[xml:lang=ar-Latn-x-lc]");
-element.addEventListener("click", myFunction);
-
-function myFunction() {
-  
-  document.querySelectorAll("[xml:lang=ar-Latn-x-lc]").click();
-
-  console.log(div.outerHTML);
-
-  div.classList.toggle("visible");
-
 }
 
 </script>
