@@ -129,20 +129,20 @@ tei-div#nTables {
 
 
 tei-idno[n=titleID] {
-  display: table-row;
+  display: table-cell;
   margin-left: 60px;
   border: 1px solid black;
 }
 
 tei-title[source="#d"][lang=ar-Latn-x-lc] {
-  display: table-row;
+  display: table-cell;
   font-style: italic;
   margin-left: 15px;
   border: 1px solid black;
 }
 
 tei-title[source="#d"][lang=ar] {
-  display: table-row;
+  display: table-cell;
   margin-left: 15px;
   border: 1px solid black;
 }
