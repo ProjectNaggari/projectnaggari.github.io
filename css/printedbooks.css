@@ -115,12 +115,14 @@ tei-note[type=inscriptionsOfOwnership] {
 
 tei-div#nTables {
   display: table;
+  border: 1px solid black;
   margin-top: 1.2em;
-  margin-left: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #d1e289 {
-  display: table;
+  display: ;
 }
 
 tei-hi[rend=italic] { font-style: italic; }
@@ -174,13 +176,3 @@ tei-div#nReflect {
 display:block;
 }
 
-/* tei-idno #nTables {
-    display: block;
-  }
-tei-title[xml:lang=ar source=#d] #nTables {
-    display: block;
-  }
-
-  tei-div#nReflect {
-  display: none;
-}
