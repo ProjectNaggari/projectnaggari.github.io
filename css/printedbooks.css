@@ -114,7 +114,7 @@ tei-note[type=inscriptionsOfOwnership] {
 */
 
 tei-div#nTables {
-  display: block;
+  display: table;
   margin-top: 1.2em;
   margin-left: 50px;
 }
