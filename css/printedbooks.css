@@ -119,7 +119,7 @@ tei-note[type=inscriptionsOfOwnership] {
   word-wrap: break-word;
 }
 
-tei-div#nTables {
+/* tei-div#nTables {
   text-align: center;
   display: block;
   margin-top: 1.2em;
@@ -158,10 +158,33 @@ tei-ref[subtype=originalLink] {
 tei-div#nReflect {
   display: none;
 }
-
+*/
 
 
 .unfold {
 display:block;
 }
 
+div.table {
+  display: table;
+  border-right: thin solid gray;
+  border-bottom: thin solid gray;
+}
+div.row {
+  display: table-row;
+}
+div.row>* {
+  display: table-cell;
+  border-left: thin solid gray;
+  border-top: thin solid gray;
+  padding: .5em;
+}
+tei-analytic>* {
+  display: block;
+}
+tei-monogr>* {
+  display: block;
+}
+tei-note>tei-p {
+  display: block;
+}
