@@ -6,9 +6,16 @@
   <script src="../js/CETEI.js"></script>
   <script>
     let c = new CETEI();
+    c.removeBehavior("tei","note");
+    c.addBehaviors({
+      "tei": {
+        "biblStruct": ["<div class=\"table\"><div class=\"row\">","</div></div>"]
+      }
+    })
     c.getHTML5('https://projectnaggari.github.io/naggari_source/naggari_printsBiblStruct_Master.xml', function(data) {
       document.querySelector("div#main").appendChild(data);
     });</script>
+    
   <script src="../js/click.js"></script>
 
 
@@ -51,18 +58,6 @@ function closeNav() {
 }
 
 </script>
-
-<script>
-    let c = new CETEI();
-    c.removeBehavior("tei","note");
-    c.addBehaviors({
-      "tei": {
-        "biblStruct": ["<div class=\"table\"><div class=\"row\">","</div></div>"]
-      }
-    })
-    c.getHTML5('https://projectnaggari.github.io/naggari_source/naggari_printsBiblStruct_Master.xml', function(data) {
-      document.querySelector("div#main").appendChild(data);
-    });</script>
 
 
 
