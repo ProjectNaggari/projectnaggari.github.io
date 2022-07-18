@@ -119,6 +119,7 @@ tei-note[type=inscriptionsOfOwnership] {
   word-wrap: break-word;
 }
 
+/*
  tei-div#nTables {
   text-align: center;
   display: block;
@@ -159,7 +160,7 @@ tei-div#nReflect {
   display: none;
 }
 
-
+*/
 
 .unfold {
 display:block;
