@@ -180,6 +180,7 @@ div.row>* {
   border-top: thin solid gray;
   padding: .5em;
 }
+
 tei-analytic>* {
   display: block;
 }
@@ -189,3 +190,8 @@ tei-monogr>* {
 tei-note>tei-p {
   display: block;
 }
+
+tei-ref[subtype=originalLink] {
+  display: none;
+}
+
