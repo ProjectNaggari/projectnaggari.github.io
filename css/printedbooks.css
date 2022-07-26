@@ -198,3 +198,7 @@ tei-ref[subtype=originalLink] {
 tei-note[type=conversation] {
   display: none;
 }
+
+tei-note[type=datesOfOwnershipInscriptions] {
+  display: none;
+}
