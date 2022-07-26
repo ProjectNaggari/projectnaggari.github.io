@@ -202,3 +202,10 @@ tei-note[type=conversation] {
 tei-note[type=datesOfOwnershipInscriptions] {
   display: none;
 }
+tei-note[type=inscriptionsOfOwnership] {
+  display: none;
+}
+
+tei-note[type=sealsOfOwners] {
+  display: none;
+}
