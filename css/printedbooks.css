@@ -209,3 +209,7 @@ tei-note[type=inscriptionsOfOwnership] {
 tei-note[type=sealsOfOwners] {
   display: none;
 }
+
+tei-note[type=values] {
+  display: none;
+}
