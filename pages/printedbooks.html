@@ -9,14 +9,23 @@
     c.removeBehavior("tei","note");
     c.addBehaviors({
       "tei": {
-        "biblStruct": ["<div class=\"table\"><div class=\"row\">","</div></div>"]
+        "biblStruct": function(e) {
+          let p = document.createElement('p');
+          p.appendChild(e.querySelector('tei-analytic>tei-idno').cloneNode(true));
+          let titles = e.querySelectorAll('tei-monogr>tei-title[lang=ar]');
+          titles.forEach(title => {
+            p.appendChild(title.cloneNode(true));
+          });
+          return p;
+        }
       }
     })
     c.getHTML5('https://projectnaggari.github.io/naggari_source/naggari_printsBiblStruct_Master.xml', function(data) {
       document.querySelector("div#main").appendChild(data);
     });</script>
+
     
-  <script src="../js/click.js"></script>
+  <!--<script src="../js/click.js"></script>-->
 
 
   <meta charset="UTF-8">

@@ -90,8 +90,27 @@ tei-hi[rend=italic] { font-style: italic; }
 }
 
 
-tei-biblStruct > * > * {
+tei-biblstruct > * > * {
   display: none;
+}
+tei-biblstruct > p {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;;
+}
+tei-biblstruct > p > tei-title {
+  text-align: right;
+}
+
+tei-biblstruct > p > * {
+  display:inline;
+}
+
+tei-biblstruct > tei-analytic {
+  display:none;
+}
+
+tei-biblstruct > tei-monogr {
+  display:none;
 }
 /* tei-note[type=sealsOfOwners] {
   display: none;
