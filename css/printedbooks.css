@@ -112,6 +112,7 @@ tei-biblstruct > p {
   margin-left: 60px;
   margin-right: 60px;
 }
+
 tei-biblstruct > p > tei-title {
   text-align: right;
 }
