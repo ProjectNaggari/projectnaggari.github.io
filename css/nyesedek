@@ -1,0 +1,113 @@
+/* tei-note[type=sealsOfOwners] {
+    display: none;
+  }
+  
+  tei-note[type=inscriptionsOfOwnership] {
+    display: none;
+  } */
+  
+  /* #nTables {
+       display: none;
+    }
+  */
+  
+  
+  
+  /*
+   tei-div#nTables {
+    text-align: center;
+    display: block;
+    margin-top: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  tei-idno[n=titleID] {
+    display: table-cell;
+    margin-left: 60px;
+    border: 1px solid black;
+  }
+  
+  tei-title[source="#d"][lang=ar-Latn-x-lc] {
+    display: table-cell;
+    font-style: italic;
+    margin-left: 15px;
+    border: 1px solid black;
+  }
+  
+  tei-title[source="#d"][lang=ar] {
+    display: table-cell;
+    margin-left: 15px;
+    border: 1px solid black;
+  }
+  
+  tei-title + tei-title {
+    margin-left: 15px;
+  }
+  
+  tei-ref[subtype=originalLink] {
+    display: none;
+  }
+  
+  tei-div#nReflect {
+    display: none;
+  }
+  
+  */
+  
+  .unfold {
+  display:block;
+  }
+  
+  div.table {
+    display: table;
+    border-right: thin solid gray;
+    border-bottom: thin solid gray;
+  }
+  div.row {
+    display: table-row;
+  }
+  div.row>* {
+    display: table-cell;
+    border-left: thin solid gray;
+    border-top: thin solid gray;
+    padding: .5em;
+  }
+  
+  tei-analytic>* {
+    display: block;
+  }
+  tei-monogr>* {
+    display: block;
+  }
+  tei-note>tei-p {
+    display: block;
+  }
+  
+  tei-ref[subtype=originalLink] {
+    display: none;
+  }
+  
+  tei-note[type=conversation] {
+    display: none;
+  }
+  
+  tei-note[type=datesOfOwnershipInscriptions] {
+    display: none;
+  }
+  tei-note[type=inscriptionsOfOwnership] {
+    display: none;
+  }
+  
+  tei-note[type=sealsOfOwners] {
+    display: none;
+  }
+  
+  tei-note[type=values] {
+    display: none;
+  }
+  
+  tei-p {
+  
+  }
