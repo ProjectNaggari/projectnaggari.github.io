@@ -12,7 +12,7 @@
         "biblStruct": function(e) {
           let p = document.createElement('p');
           p.appendChild(e.querySelector('tei-analytic>tei-idno').cloneNode(true));
-          let titles = e.querySelectorAll('tei-monogr>tei-title[lang=ar]');
+          let titles = e.querySelectorAll('tei-monogr>tei-title');
           titles.forEach(title => {
             p.appendChild(title.cloneNode(true));
           });
