@@ -117,6 +117,10 @@ tei-biblstruct > p > tei-title {
   text-align: right;
 }
 
+tei-biblstruct > p > tei-measure {
+  text-align: right;
+}
+
 tei-biblstruct > p > * {
   display:inline;
 }
