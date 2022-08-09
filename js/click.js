@@ -1,11 +1,11 @@
 
 
-const element = document.querySelectorAll('tei-title[lang="ar-Latn-x-lc"]');
-element.addEventListener("click", myFunction);
+const element = document.querySelectorAll("tei-title[lang='ar-Latn-x-lc']");
+element.addEventListener("click", showData);
 
 
 //
-// function myFunction() {
+// function showData() {
   
   //document.querySelectorAll("[xml:lang=ar-Latn-x-lc]").click();
 
