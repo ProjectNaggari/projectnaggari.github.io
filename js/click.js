@@ -1,6 +1,6 @@
 
 
-const element = p.querySelectorAll('tei-title[lang="ar-Latn-x-lc"]');
+const element = document.querySelectorAll('tei-title[lang="ar-Latn-x-lc"]');
 element.addEventListener("click", showData);
 
 
