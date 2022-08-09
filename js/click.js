@@ -29,7 +29,7 @@ element.addEventListener("click", showData);
 //div.className = 'foo';
 
 // our starting state: <div class="foo"></div>
-c//onsole.log(div.outerHTML);
+//console.log(div.outerHTML);
 
 // use the classList API to remove and add classes
 //div.classList.remove("foo");
