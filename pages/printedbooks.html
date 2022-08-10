@@ -11,9 +11,10 @@
       "tei": {
         "biblStruct": function(e) {
           let p = document.createElement('p');
-          let measures = e.querySelectorAll('tei-note>tei-measuregrp>tei-measure[source="#d"]>tei-num[lang="ar"]');
-          measures.forEach(measure => {
-            p.appendChild(measure.cloneNode(true));
+        
+          let volumes = e.querySelectorAll('tei-monogr>tei-imprint>tei-biblscope[source="#d"][lang="ar"]');
+          volumes.forEach(volume => {
+            p.appendChild(volume.cloneNode(true));
           });
 
           let types = e.querySelectorAll('tei-monogr>tei-notegrp>tei-note[lang="ar"]');
@@ -21,14 +22,14 @@
             p.appendChild(type.cloneNode(true));
           });
 
-          let volumes = e.querySelectorAll('tei-monogr>tei-imprint>tei-biblscope[source="#d"][lang="ar"]');
-          volumes.forEach(volume => {
-            p.appendChild(volume.cloneNode(true));
-          });
-    
           let titles = e.querySelectorAll('tei-monogr>tei-title[source="#d"]');
           titles.forEach(title => {
             p.appendChild(title.cloneNode(true));
+          });
+
+          let measures = e.querySelectorAll('tei-note>tei-measuregrp>tei-measure[source="#d"]>tei-num[lang="ar"]');
+          measures.forEach(measure => {
+            p.appendChild(measure.cloneNode(true));
           });
           return p;
         },
