@@ -15,6 +15,11 @@
           measures.forEach(measure => {
             p.appendChild(measure.cloneNode(true));
           });
+
+          let types = e.querySelectorAll('tei-monogr>tei-notegrp>tei-note[lang="ar"]');
+          types.forEach(type => {
+            p.appendChild(type.cloneNode(true));
+          });
     
           let titles = e.querySelectorAll('tei-monogr>tei-title[source="#d"]');
           titles.forEach(title => {
