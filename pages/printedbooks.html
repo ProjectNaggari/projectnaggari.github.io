@@ -20,6 +20,11 @@
           types.forEach(type => {
             p.appendChild(type.cloneNode(true));
           });
+
+          let volumes = e.querySelectorAll('tei-monogr>tei-imprint>tei-biblscope[source="#d"][lang="ar"]');
+          volumes.forEach(volume => {
+            p.appendChild(volume.cloneNode(true));
+          });
     
           let titles = e.querySelectorAll('tei-monogr>tei-title[source="#d"]');
           titles.forEach(title => {
