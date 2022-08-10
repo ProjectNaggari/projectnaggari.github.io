@@ -11,7 +11,7 @@
       "tei": {
         "biblStruct": function(e) {
           let p = document.createElement('p');
-          let measures = e.querySelectorAll('tei-note>tei-measure[source="#d"]');
+          let measures = e.querySelectorAll('tei-note>tei-measuregrp>tei-measure[source="#d"]>tei-num');
           measures.forEach(measure => {
             p.appendChild(measure.cloneNode(true));
           });
