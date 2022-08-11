@@ -103,9 +103,9 @@ tei-hi[rend=italic] { font-style: italic; }
 }
 
 tei-biblstruct > p {
-  direction: rtl;
   display: grid;
   grid-template-columns: .5fr .5fr 1.6fr 2fr .4fr;
+  column-gap: 1em;
   margin-left: 60px;
   margin-right: 60px;
 }
