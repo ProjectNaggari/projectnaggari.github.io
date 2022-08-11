@@ -1,17 +1,15 @@
 
 
-const element = document.querySelectorAll('tei-title[lang="ar-Latn-x-lc"]');
-element.addEventListener("click", showData);
 
 
+function showData(event) {
+  event.target.parentElement.nextElementSibling.classList.add('show')
 
-function showData() {
-  
-  document.querySelectorAll('[tei-title[lang="ar-Latn-x-lc]').click();
+}
 
-  console.log(div.outerHTML);
-
-  div.classList.toggle("visible");}
+function hideData(event) {
+  event.target.parentElement.parentElement.classList.remove('show');
+}
 
 
 

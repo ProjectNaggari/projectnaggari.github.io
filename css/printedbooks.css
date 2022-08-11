@@ -102,10 +102,6 @@ tei-hi[rend=italic] { font-style: italic; }
   display: none;
 }
 
-
-tei-biblstruct > * > * {
-  display: none;
-}
 tei-biblstruct > p {
   direction: rtl;
   display: grid;
@@ -126,11 +122,35 @@ tei-biblstruct > p > * {
   display:inline;
 }
 
-tei-biblstruct > tei-analytic {
-  display:none;
+tei-biblstruct > div {
+  display: none;
 }
-
-tei-biblstruct > tei-monogr {
-  display:none;
+tei-biblstruct > div.show {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+tei-biblstruct > div > tei-note[type="values"] {
+  display: block;
+}
+tei-biblstruct > div > tei-note {
+  display: none;
+}
+tei-biblstruct > div > tei-analytic > * {
+  display: block;
+}
+tei-biblstruct > div > tei-monogr > * {
+  display: block;
+}
+tei-biblstruct > div > tei-note[type="values"] > * {
+  display: block;
+}
+tei-measure {
+  display: block;
+}
+tei-biblstruct tei-title[lang="ar-Latn-x-lc"] {
+  cursor: pointer;
+}
+tei-biblstruct > div tei-idno {
+  cursor: pointer;
 }
 

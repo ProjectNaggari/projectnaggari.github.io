@@ -4,13 +4,17 @@
   <title>Project Naggari</title>
   <link rel="stylesheet" href="../css/printedbooks.css">
   <script src="../js/CETEI.js"></script>
+  <script src="../js/click.js"></script>
+
   <script>
     let c = new CETEI();
     c.removeBehavior("tei","note");
     c.addBehaviors({
       "tei": {
         "biblStruct": function(e) {
+          let row = document.createDocumentFragment();
           let p = document.createElement('p');
+          row.appendChild(p);
 
           let vol = e.querySelector('tei-monogr>tei-imprint>tei-biblscope[source="#d"][lang="ar"]');
           if (vol && !vol.hasAttribute('data-empty')) {
@@ -37,8 +41,13 @@
           } else {
             p.appendChild(document.createElement('span'));
           }
+          let full = document.createElement('div');
+          Array.from(e.children).forEach(child => {
+            full.appendChild(child.cloneNode(true));
+          });
+          row.appendChild(full);
 
-          return p;
+          return row;
         },
         "biblScope": [
           ['[source="#d"][lang="ar"]', ['','ج']]
@@ -47,10 +56,17 @@
     })
     c.getHTML5('https://projectnaggari.github.io/naggari_source/naggari_printsBiblStruct_Master.xml', function(data) {
       document.querySelector("div#main").appendChild(data);
+      const titles = document.querySelectorAll('tei-title[lang="ar-Latn-x-lc"]');
+      titles.forEach(title => {
+        title.addEventListener("click", showData);
+      });
+      const idnos = document.querySelectorAll('div>tei-analytic>tei-idno');
+      idnos.forEach(idno => {
+        idno.addEventListener('click', hideData);
+      });
     });</script>
 
     
-<script src="../js/click.js"></script>
 
 
   <meta charset="UTF-8">
