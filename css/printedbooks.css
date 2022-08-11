@@ -107,8 +107,9 @@ tei-biblstruct > * > * {
   display: none;
 }
 tei-biblstruct > p {
+  direction: rtl;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: .5fr .5fr 1.6fr 2fr .4fr;
   margin-left: 60px;
   margin-right: 60px;
 }

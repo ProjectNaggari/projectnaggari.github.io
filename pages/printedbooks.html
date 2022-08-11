@@ -19,13 +19,6 @@
             p.appendChild(document.createElement('span'));
           }
 
-          let price = e.querySelector('tei-note>tei-measuregrp>tei-measure[source="#d"]>tei-num[lang="ar"]');
-          if (price &&!price.hasAttribute('data-empty')) {
-            p.appendChild(price.cloneNode(true));
-          } else {
-            p.appendChild(document.createElement('span'));
-          }
-
           let type = e.querySelector('tei-monogr>tei-notegrp>tei-note[lang="ar"]');
           if (type && !type.hasAttribute('data-empty')) {
             p.appendChild(type.cloneNode(true));
@@ -34,14 +27,17 @@
           }
 
           let titles = e.querySelectorAll('tei-monogr>tei-title[source="#d"]');
-          titles.forEach(title => {
+          Array.from(titles).reverse().forEach(title => {
             p.appendChild(title.cloneNode(true));
           });
 
-          let measures = e.querySelectorAll('tei-note>tei-measuregrp>tei-measure[source="#d"]>tei-num[lang="ar"]');
-          measures.forEach(measure => {
-            p.appendChild(measure.cloneNode(true));
-          });
+          let price = e.querySelector('tei-note>tei-measuregrp>tei-measure[source="#d"]>tei-num[lang="ar"]');
+          if (price &&!price.hasAttribute('data-empty')) {
+            p.appendChild(price.cloneNode(true));
+          } else {
+            p.appendChild(document.createElement('span'));
+          }
+
           return p;
         },
         "biblScope": [
