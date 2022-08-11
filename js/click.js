@@ -4,20 +4,19 @@ const element = document.querySelectorAll('tei-title[lang="ar-Latn-x-lc"]');
 element.addEventListener("click", showData);
 
 
-//
-// function showData() {
+
+function showData() {
   
-  //document.querySelectorAll("[xml:lang=ar-Latn-x-lc]").click();
+  document.querySelectorAll('[tei-title[lang="ar-Latn-x-lc]').click();
 
-  //console.log(div.outerHTML);
+  console.log(div.outerHTML);
 
-  //div.classList.toggle("visible");}
-
-
+  div.classList.toggle("visible");}
 
 
 
-//
+
+
 
 
 
