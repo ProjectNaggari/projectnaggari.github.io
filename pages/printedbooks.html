@@ -11,16 +11,27 @@
       "tei": {
         "biblStruct": function(e) {
           let p = document.createElement('p');
-        
-          let volumes = e.querySelectorAll('tei-monogr>tei-imprint>tei-biblscope[source="#d"][lang="ar"]');
-          volumes.forEach(volume => {
-            p.appendChild(volume.cloneNode(true));
-          });
 
-          let types = e.querySelectorAll('tei-monogr>tei-notegrp>tei-note[lang="ar"]');
-          types.forEach(type => {
+          let vol = e.querySelector('tei-monogr>tei-imprint>tei-biblscope[source="#d"][lang="ar"]');
+          if (vol && !vol.hasAttribute('data-empty')) {
+            p.appendChild(vol.cloneNode(true));
+          } else {
+            p.appendChild(document.createElement('span'));
+          }
+
+          let price = e.querySelector('tei-note>tei-measuregrp>tei-measure[source="#d"]>tei-num[lang="ar"]');
+          if (price &&!price.hasAttribute('data-empty')) {
+            p.appendChild(price.cloneNode(true));
+          } else {
+            p.appendChild(document.createElement('span'));
+          }
+
+          let type = e.querySelector('tei-monogr>tei-notegrp>tei-note[lang="ar"]');
+          if (type && !type.hasAttribute('data-empty')) {
             p.appendChild(type.cloneNode(true));
-          });
+          } else {
+            p.appendChild(document.createElement('span'));
+          }
 
           let titles = e.querySelectorAll('tei-monogr>tei-title[source="#d"]');
           titles.forEach(title => {
@@ -34,7 +45,7 @@
           return p;
         },
         "biblScope": [
-          ["[source=\"#d\"][lang=\"ar\"]", ['','ج']]
+          ['[source="#d"][lang="ar"]', ['','ج']]
         ]
       }
     })
