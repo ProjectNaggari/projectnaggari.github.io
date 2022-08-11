@@ -113,6 +113,9 @@ tei-biblstruct > p {
 tei-biblstruct > p > tei-title {
   text-align: right;
 }
+tei-biblstruct > p > tei-title[lang="ar-Latn-x-lc"] {
+  text-align: left;
+}
 
 tei-biblstruct > p > tei-measure {
   text-align: right;
