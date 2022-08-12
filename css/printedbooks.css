@@ -152,6 +152,8 @@ tei-measure {
 }
 tei-biblstruct tei-title[lang="ar-Latn-x-lc"] {
   cursor: pointer;
+  text-decoration: underline;     
+  text-decoration-color: blue; 
 }
 tei-biblstruct > div tei-idno {
   cursor: pointer;
