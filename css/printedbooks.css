@@ -157,5 +157,7 @@ tei-biblstruct tei-title[lang="ar-Latn-x-lc"] {
 }
 tei-biblstruct > div tei-idno {
   cursor: pointer;
+  text-decoration: underline;     
+  text-decoration-color: blue; 
 }
 
