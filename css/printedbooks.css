@@ -162,10 +162,9 @@ tei-biblstruct > div tei-idno {
 }
 
 #printedDescr {
-  text-indent: 50px;
   text-align: justify;
   line-height: 1.4;
   display: block;
-  margin-top: .5em;
-  margin-bottom: .5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
