@@ -173,3 +173,7 @@ tei-biblstruct tei-imprint tei-ref[type="LAT"] {
 display: none;
 
 }
+
+i {
+font-style: italic;
+}
