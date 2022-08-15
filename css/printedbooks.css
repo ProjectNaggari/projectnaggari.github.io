@@ -169,7 +169,7 @@ tei-biblstruct > div tei-idno {
   margin-bottom: 2em;
 }
 
-tei-biblstruct tei-imprint tei-ref[type="LAT"] {
+tei-biblstruct tei-imprint tei-ref[type="LAT"],[type="LONG"] {
 display: none;
 
 }
