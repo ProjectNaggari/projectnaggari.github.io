@@ -168,3 +168,8 @@ tei-biblstruct > div tei-idno {
   margin-top: 2em;
   margin-bottom: 2em;
 }
+
+tei-biblstruct tei-imprint tei-ref[type="LAT"] {
+display: none;
+
+}
