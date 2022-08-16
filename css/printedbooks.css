@@ -183,3 +183,7 @@ font-weight: italic;
 tei-biblstruct tei-monogr tei-note[type="remarks"] {
   display: none;
 }
+
+*:empty {
+  display: none;
+}
