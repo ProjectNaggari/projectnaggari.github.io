@@ -184,6 +184,6 @@ tei-biblstruct tei-monogr tei-note[type="remarks"] {
   display: none;
 }
 
-*:empty {
+tei-measurgroup tei-num:empty {
   display: none;
 }
