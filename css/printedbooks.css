@@ -191,3 +191,7 @@ tei-note[type="values"] tei-measurgroup tei-mesure tei-num:empty {
 tei-analytic tei-respstmt tei-resp tei-idno {
   display: none;
 }
+
+tei-analytic tei-author tei-idno {
+  display: none;
+}
