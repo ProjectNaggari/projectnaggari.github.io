@@ -187,3 +187,7 @@ tei-biblstruct tei-monogr tei-note[type="remarks"] {
 tei-note[type="values"] tei-measurgroup tei-mesure tei-num:empty {
   display: none;
 }
+
+tei-analytic tei-respstmt tei-resp tei-idno {
+  display: none;
+}
