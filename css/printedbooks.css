@@ -152,8 +152,44 @@ tei-measure {
 }
 tei-biblstruct tei-title[lang="ar-Latn-x-lc"] {
   cursor: pointer;
+  text-decoration: underline;     
+  text-decoration-color: blue; 
 }
 tei-biblstruct > div tei-idno {
   cursor: pointer;
+  text-decoration: underline;     
+  text-decoration-color: blue; 
 }
 
+#printedDescr {
+  text-align: justify;
+  line-height: 1.4;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+tei-biblstruct tei-imprint tei-ref[type="LAT"],[type="LONG"] {
+display: none;
+
+}
+
+
+
+i {
+font-weight: italic;
+}
+
+tei-biblstruct tei-monogr tei-note[type="remarks"] {
+  display: none;
+}
+
+/* tei-note[type="values"] tei-measurgroup tei-mesure tei-num:empty {
+  display: none;
+}
+*/
+
+
+tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno {
+  display: none;
+}
