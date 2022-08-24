@@ -41,10 +41,27 @@
           } else {
             p.appendChild(document.createElement('span'));
           }
-          let full = document.createElement('div');
+          const full = document.createElement('div');
+          // Make a child div with all of the @lang="ar" elements removed
+          const en = document.createElement('div');
+          en.classList.add('en')
           Array.from(e.children).forEach(child => {
-            full.appendChild(child.cloneNode(true));
+            en.appendChild(child.cloneNode(true));
           });
+          en.querySelectorAll('[lang="ar"]').forEach(elt => {
+            elt.parentElement.removeChild(elt);
+          })
+          full.appendChild(en);
+          // Make a child div with all of the @lang="ar-Latn-x-lc" elements removed
+          const ar = document.createElement('div');
+          ar.classList.add('ar')
+          Array.from(e.children).forEach(child => {
+            ar.appendChild(child.cloneNode(true));
+          });
+          ar.querySelectorAll('[lang="ar-Latn-x-lc"]').forEach(elt => {
+            elt.parentElement.removeChild(elt);
+          })
+          full.appendChild(ar);
           row.appendChild(full);
 
           return row;
