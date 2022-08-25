@@ -58,7 +58,7 @@
           Array.from(e.children).forEach(child => {
             ar.appendChild(child.cloneNode(true));
           });
-          ar.querySelectorAll('[lang="ar-Latn-x-lc"]').forEach(elt => {
+          ar.querySelectorAll('[lang="ar-Latn-x-lc"] [lang="en"]').forEach(elt => {
             elt.parentElement.removeChild(elt);
           })
           full.appendChild(ar);
