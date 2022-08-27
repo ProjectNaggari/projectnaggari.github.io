@@ -52,7 +52,7 @@
             elt.parentElement.removeChild(elt);
           })
           full.appendChild(en);
-          // Make a child div with all of the @lang="ar-Latn-x-lc" elements removed
+          // Make a child div with all of the @lang="ar-Latn-x-lc" and "en" elements removed
           const ar = document.createElement('div');
           ar.classList.add('ar')
           Array.from(e.children).forEach(child => {
