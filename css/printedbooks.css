@@ -193,3 +193,8 @@ tei-biblstruct tei-monogr tei-note[type="remarks"] {
 tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno {
   display: none;
 }
+
+.ar {
+
+  direction: rtl;
+}
