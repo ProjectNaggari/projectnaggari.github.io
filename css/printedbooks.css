@@ -197,4 +197,6 @@ tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno {
 .ar {
 
   direction: rtl;
+  display: block;
+
 }
