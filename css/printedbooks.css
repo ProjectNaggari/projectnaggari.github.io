@@ -190,7 +190,7 @@ tei-biblstruct tei-monogr tei-note[type="remarks"] {
 */
 
 
-tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno {
+tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno, tei-note[type="conversation"] {
   display: none;
 }
 
@@ -208,5 +208,5 @@ tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno {
   display: table;
   text-align: justify;
   border-spacing:.5em;
-  
+
 }
