@@ -202,3 +202,11 @@ tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno {
   border-spacing:.5em;
 
 }
+
+.en {
+
+  display: table;
+  text-align: justify;
+  border-spacing:.5em;
+  
+}
