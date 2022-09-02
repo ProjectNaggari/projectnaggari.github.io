@@ -197,7 +197,7 @@ tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno, t
 .ar {
 
   direction: rtl;
-  display: table;
+  display: block;
   text-align: justify;
   border-spacing:.5em;
 
@@ -205,7 +205,7 @@ tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno, t
 
 .en {
 
-  display: table;
+  display: block;
   text-align: justify;
   border-spacing:.5em;
 
