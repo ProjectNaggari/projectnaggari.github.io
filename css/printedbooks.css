@@ -195,12 +195,15 @@ tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno, t
 }
 
 .ar {
-
   direction: rtl;
-  display: block;
+  display: table;
   text-align: justify;
   border-spacing:.5em;
 
+}
+
+.ar *[data-origname] {
+  display: block;
 }
 
 .en {
