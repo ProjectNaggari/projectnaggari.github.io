@@ -8,7 +8,7 @@ function showData(event) {
 }
 
 function hideData(event) {
-  event.target.parentElement.parentElement.classList.remove('show');
+  event.target.parentElement.parentElement.parentElement.classList.remove('show');
 }
 
 

@@ -194,10 +194,12 @@ tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno, t
   display: none;
 }
 
+.ar,.en {
+  margin: 0 1em 0 1em;
+}
 .ar {
 
   direction: rtl;
-  display: table;
   text-align: justify;
   border-spacing:.5em;
 
@@ -205,8 +207,11 @@ tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno, t
 
 .en {
 
-  display: table;
   text-align: justify;
   border-spacing:.5em;
 
+}
+
+.ar p,.en p {
+  margin: 0;
 }

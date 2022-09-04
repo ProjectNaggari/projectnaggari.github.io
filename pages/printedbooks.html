@@ -11,6 +11,7 @@
     c.removeBehavior("tei","note");
     c.addBehaviors({
       "tei": {
+        "author": ['<p>','</p>'],
         "biblStruct": function(e) {
           let row = document.createDocumentFragment();
           let p = document.createElement('p');
@@ -36,7 +37,7 @@
           });
 
           let price = e.querySelector('tei-note>tei-measuregrp>tei-measure[source="#d"]>tei-num[lang="ar"]');
-          if (price &&!price.hasAttribute('data-empty')) {
+          if (price?.hasAttribute('data-empty')) {
             p.appendChild(price.cloneNode(true));
           } else {
             p.appendChild(document.createElement('span'));
@@ -51,6 +52,10 @@
           en.querySelectorAll('[lang="ar"]').forEach(elt => {
             elt.parentElement.removeChild(elt);
           })
+          // Remove notes that have empty paragraphs
+          en.querySelectorAll('tei-note>*[data-empty]').forEach(elt => {
+            elt.parentElement.parentElement.removeChild(elt.parentElement);
+          });
           full.appendChild(en);
           // Make a child div with all of the @lang="ar-Latn-x-lc" and "en" elements removed
           const ar = document.createElement('div');
@@ -61,6 +66,7 @@
           ar.querySelectorAll('[lang="ar-Latn-x-lc"], [lang="en"]').forEach(elt => {
             elt.parentElement.removeChild(elt);
           })
+          
           full.appendChild(ar);
           row.appendChild(full);
 
@@ -68,6 +74,18 @@
         },
         "biblScope": [
           ['[source="#d"][lang="ar"]', ['','ج']]
+        ],
+        "imprint": ['<p>','</p>'],
+        "publisher": ['', ', '],
+        "pubPlace": [
+          [':not([lang])', e => {
+            e.parentElement.removeChild(e);
+          }],
+          ['_', ['(', ')']]
+        ],
+        "respStmt": ['<p>','</p>'],
+        "title": [
+          ['tei-monogr>tei-title', ['<p>', '</p>']]
         ]
       }
     })
