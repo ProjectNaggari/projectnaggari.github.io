@@ -89,7 +89,7 @@
         ]
       }
     })
-    c.getHTML5('https://projectnaggari.github.io/naggari_source/naggari_printsBiblStruct_Master.xml', function(data) {
+    c.getHTML5('https://projectnaggari.github.io/naggari_source/TEI_Printed/naggari_printsBiblStruct_Master.xml', function(data) {
       document.querySelector("div#main").appendChild(data);
       const titles = document.querySelectorAll('tei-title[lang="ar-Latn-x-lc"]');
       titles.forEach(title => {

@@ -130,7 +130,7 @@ tei-biblstruct > div {
 }
 tei-biblstruct > div.show {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 tei-biblstruct > div > tei-note[type="values"] {
   display: block;
@@ -195,10 +195,9 @@ tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno, t
 }
 
 .ar,.en {
-  margin: 0 1em 0 1em;
+  margin: 0 2em 0 2em;
 }
 .ar {
-
   direction: rtl;
   text-align: justify;
   border-spacing:.5em;
