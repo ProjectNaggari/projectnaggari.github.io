@@ -202,6 +202,10 @@ tei-analytic>tei-respstmt {
   display: block;
 }
 
+tei-monogr tei-biblscope[unit="page"] {
+  display: block;
+}
+
 .ar,.en {
   margin: 0 2em 0 2em;
 }
