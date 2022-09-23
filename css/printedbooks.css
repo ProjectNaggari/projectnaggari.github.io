@@ -194,6 +194,14 @@ tei-analytic tei-respstmt tei-resp tei-idno, tei-analytic tei-author tei-idno, t
   display: none;
 }
 
+tei-analytic>tei-author {
+  display: block;
+}
+
+tei-analytic>tei-respstmt {
+  display: block;
+}
+
 .ar,.en {
   margin: 0 2em 0 2em;
 }
