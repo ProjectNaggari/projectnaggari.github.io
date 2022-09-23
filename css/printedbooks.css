@@ -202,7 +202,7 @@ tei-analytic>tei-respstmt {
   display: block;
 }
 
-tei-analytic tei-biblscope[unit="page"] {
+tei-monogr tei-biblscope[unit="page"] {
   display: block;
 }
 
