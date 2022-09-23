@@ -150,7 +150,7 @@ tei-biblstruct > div > tei-note[type="values"] > * {
 tei-measure {
   display: block;
 }
-tei-biblstruct tei-title[lang="ar-Latn-x-lc"] {
+tei-biblstruct[type="row"]>p>tei-title[lang="ar-Latn-x-lc"] {
   cursor: pointer;
   text-decoration: underline;     
   text-decoration-color: blue; 
