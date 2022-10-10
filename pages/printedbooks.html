@@ -80,13 +80,23 @@
           ['tei-author>tei-persname[lang="ar-Latn-x-lc"]', ['<b>Author: </b>','']],
           ['tei-author>tei-persname[lang=ar]', ['<b>المؤلف: </b>','']],
         ],
-        "publisher": ['', ', '],
+        "publisher": [
+          ['tei-imprint>tei-publisher[lang="ar-Latn-x-lc"]', ['<b>Publisher: </b>','']],
+          ['tei-imprint>tei-publisher[lang="ar"]', ['<b>دار الطباعة: </b>','']],
+        ],
         "pubPlace": [
           [':not([lang])', e => {
             e.parentElement.removeChild(e);
           }],
           ['_', ['(', ')']]
+          ['tei-imprint>tei-pubplace[xml:lang="ar"]', ['<b>مكان الطباعة: </b>','']], 
+          ['tei-imprint>tei-pubplace[xml:lang="ar-Latn-x-lc"]', ['<b>Place of Publication: </b>','']],
         ],
+        "date": [
+          ['tei-imprint>tei-date[xml:lang="ar"][type="hijri"]', ['<b>تاريخ الطباعة: </b>','']],
+          ['tei-imprint>tei-date[xml:lang="en"][type="gregorian"]', ['<b>Date of Publication: </b>','']],
+
+        ]
         "respStmt": function(elt) {
           const result = document.createDocumentFragment();
           elt.querySelectorAll('tei-persname:not([data-empty])').forEach(pn => {
@@ -100,7 +110,11 @@
         },
         "roleName": ['', ': '],
         "title": [
-          ['tei-monogr>tei-title', ['<p>', '</p>']]
+          ['tei-monogr>tei-title[lang="ar-Latn-x-lc"][source="#d"]', ['<p><b>Title from the Daftar: </b>', '</p>']]
+          ['tei-monogr>tei-title[lang="ar"][source="#d"]', ['<p><b>العنوان في الدفتر: </b>', '</p>']]
+          ['tei-monogr>tei-title[lang="ar-Latn-x-lc"][source="VARIES !!!"]', ['<p><b>Title from the Print: </b>', '</p>']]
+          ['tei-monogr>tei-title[lang="ar"][source="VARIES !!!"]', ['<p><b>العنوان في النسخة: </b>', '</p>']]
+
         ]
       }
     })
