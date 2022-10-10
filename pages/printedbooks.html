@@ -97,9 +97,10 @@
           [':not([lang])', e => {
             e.parentElement.removeChild(e);
           }],
-          ['_', ['(', ')']]
           ['tei-imprint>tei-pubplace[xml:lang="ar"]', ['<b>مكان الطباعة: </b>','']], 
           ['tei-imprint>tei-pubplace[xml:lang="ar-Latn-x-lc"]', ['<b>Place of Publication: </b>','']],
+          ['_', ['(', ')']]
+        
         ],
         "date": [
           ['tei-imprint>tei-date[xml:lang="ar"][type="hijri"]', ['<b>تاريخ الطباعة: </b>','']],
