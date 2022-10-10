@@ -96,7 +96,7 @@
           ['tei-imprint>tei-date[xml:lang="ar"][type="hijri"]', ['<b>تاريخ الطباعة: </b>','']],
           ['tei-imprint>tei-date[xml:lang="en"][type="gregorian"]', ['<b>Date of Publication: </b>','']],
 
-        ]
+        ],
         "respStmt": function(elt) {
           const result = document.createDocumentFragment();
           elt.querySelectorAll('tei-persname:not([data-empty])').forEach(pn => {
