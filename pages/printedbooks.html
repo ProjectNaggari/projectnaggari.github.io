@@ -37,7 +37,7 @@
           });
 
           let price = e.querySelector('tei-note>tei-measuregrp>tei-measure[source="#d"]>tei-num[lang="ar"]');
-          if (price?.hasAttribute('data-empty')) {
+          if (!price?.hasAttribute('data-empty')) {
             p.appendChild(price.cloneNode(true));
           } else {
             p.appendChild(document.createElement('span'));
@@ -75,6 +75,16 @@
           ar.querySelectorAll('[lang="ar-Latn-x-lc"], [lang="en"]').forEach(elt => {
             elt.parentElement.removeChild(elt);
           })
+          // Make the image
+          let bigimg;
+          if (e.hasAttribute('facs')) {
+            bigimg = document.createElement('img');
+            bigimg.setAttribute('src', `/img/page_images/${e.getAttribute('facs')}.jpg`);
+          } else {
+            bigimg = document.createElement('span');
+          }
+          full.appendChild(bigimg);
+
           
           full.appendChild(ar);
           row.appendChild(full);
