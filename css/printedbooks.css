@@ -206,6 +206,10 @@ tei-analytic>tei-respstmt {
   display: block;
 }
 
+tei-imprint {
+  display: block;
+}
+
 tei-monogr tei-biblscope[unit="page"] {
   display: block;
 }
