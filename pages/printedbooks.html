@@ -42,6 +42,15 @@
           } else {
             p.appendChild(document.createElement('span'));
           }
+          let img;
+          if (e.hasAttribute('facs')) {
+            img = document.createElement('img');
+            img.setAttribute('src', `/img/page_images/${e.getAttribute('facs')}.jpg`);
+          } else {
+            img = document.createElement('span');
+          }
+          p.appendChild(img);
+
           const full = document.createElement('div');
           // Make a child div with all of the @lang="ar" elements removed
           const en = document.createElement('div');
