@@ -91,7 +91,7 @@ tei-div#nCopyright {
   margin-right: auto;
   margin-top: 1.33em;
   font-weight: bold;
-  font-family: serif;
+  /*font-family: serif; */
   word-wrap: break-word;
 }
 
@@ -102,7 +102,7 @@ tei-div#nCetei {
   margin-right: auto;
   margin-top: 1.33em;
   font-weight: bold;
-  font-family: serif;
+  /*font-family: serif; */
   word-wrap: break-word;
 }
 
@@ -113,7 +113,7 @@ tei-div#nPubRef {
   margin-right: auto;
   margin-top: 1.33em;
   font-weight: bold;
-  font-family: serif;
+  /*font-family: serif; */
   word-wrap: break-word;
 }
 
@@ -164,7 +164,7 @@ tei-div#nKathryn {
   margin-right: auto;
   margin-top: 1.33em;
   font-weight: bold;
-  font-family: serif;
+  /* font-family: serif; */
   word-wrap: break-word;
 
 background-color: lightgrey;
