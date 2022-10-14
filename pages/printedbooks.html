@@ -100,13 +100,13 @@
         ],
         "publisher": [
           ['tei-imprint>tei-publisher[lang="ar-Latn-x-lc"]', ['<b>Publisher: </b>','']],
-          ['tei-imprint>tei-publisher[lang="ar"]', ['<b>دار الطباعة: </b>','']],
+          ['tei-imprint>tei-publisher[lang="ar"]', ['<p><b>دار الطباعة: </b>', '</p>', '']],
         ],
         "pubPlace": [
           [':not([lang])', e => {
             e.parentElement.removeChild(e);
           }],
-          ['tei-imprint>tei-pubplace[lang="ar"]', ['<b>مكان الطباعة: </b>','']], 
+          ['tei-imprint>tei-pubplace[lang="ar"]', ['<p><b>مكان الطباعة: </b>', '</p>', '']], 
           ['tei-imprint>tei-pubplace[lang="ar-Latn-x-lc"]', ['<b>Place of Publication: </b>','']],
           ['_', ['(', ')']]
         ],
