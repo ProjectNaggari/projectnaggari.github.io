@@ -143,7 +143,10 @@
         ['tei-monogr>tei-notegrp[lang="ar"][source="#d"]', ['<p><b>نوع دار الطباعة في الدفتر: </b>', '</p>']],
         ['tei-monogr>tei-notegrp[lang="en"][source="#d"]', ['<p><b>Kind of printing house: </b>', '</p>']],
 
-        ]
+        ],
+        "printtype": [
+        ['tei-monogr>tei-edition>tei-objecttype[lang="en"]', ['<p><b>Is it Lithograph?: </b>', '</p>']],
+      ]
       }
     })
     c.getHTML5('https://projectnaggari.github.io/naggari_source/TEI_Printed/naggari_printsBiblStruct_Master.xml', function(data) {
