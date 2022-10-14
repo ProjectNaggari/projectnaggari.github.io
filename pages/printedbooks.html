@@ -135,6 +135,10 @@
           ['tei-monogr>tei-title[lang="ar"]:not([source="#d"])', ['<p><b>العنوان في النسخة: </b>', '</p>']]
 
         ]
+        "volumes": [
+        ['tei-imprint>tei-biblscope[lang="ar"][source="#d"]', ['<p><b>اجزاء في الدفتر: </b>','</p>', '']],
+
+        ]
       }
     })
     c.getHTML5('https://projectnaggari.github.io/naggari_source/TEI_Printed/naggari_printsBiblStruct_Master.xml', function(data) {
