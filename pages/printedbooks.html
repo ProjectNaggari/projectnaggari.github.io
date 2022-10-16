@@ -78,8 +78,21 @@
           // Make the image
           let bigimg;
           if (e.hasAttribute('facs')) {
-            bigimg = document.createElement('img');
-            bigimg.setAttribute('src', `/img/page_images/${e.getAttribute('facs')}.jpg`);
+            bigimg = document.createElement('div');
+            bigimg.classList.add('image');
+            const refs = document.createElement('span');
+            const origLink = e.querySelector('tei-ref[subtype="originalLink"]');
+            const archived = e.querySelector('tei-ref[subtype="archived"]');
+            if (origLink?.hasAttribute('target')) {
+              refs.appendChild(origLink.parentElement.removeChild(origLink));
+            }
+            if (archived) {
+              refs.appendChild(archived.parentElement.removeChild(archived));
+            }
+            bigimg.appendChild(refs);
+            const imgtag = document.createElement('img');
+            imgtag.setAttribute('src', `/img/page_images/${e.getAttribute('facs')}.jpg`);
+            bigimg.appendChild(imgtag);
           } else {
             bigimg = document.createElement('span');
           }
@@ -135,19 +148,18 @@
           ['tei-monogr>tei-title[lang="ar"]:not([source="#d"])', ['<p><b>العنوان في النسخة: </b>', '</p>']]
 
         ],
-        "biblscope": [
-        ['tei-imprint>tei-biblscope[lang="ar"][source="#d"][unit="volume"]', ['<p><b>اجزاء في الدفتر: </b>','</p>', '']],
-        ['tei-imprint>tei-biblscope[lang="ar-Latn-x-lc"][source="#d"][unit="volume"]', ['<p><b>Volumes in the Daftar: </b>','</p>', '']],
-        ['tei-imprint>tei-biblscope[lang="ar-Latn-x-lc"][unit="volume"]:not([source="#d"])', ['<p><b>Volumes in the Print: </b>','</p>', '']],
+        "biblScope": [
+          ['tei-imprint>tei-biblscope[lang="ar"][source="#d"][unit="volume"]', ['<p><b>اجزاء في الدفتر: </b>','</p>', '']],
+          ['tei-imprint>tei-biblscope[lang="ar-Latn-x-lc"][source="#d"][unit="volume"]', ['<p><b>Volumes in the Daftar: </b>','</p>', '']],
+          ['tei-imprint>tei-biblscope[lang="ar-Latn-x-lc"][unit="volume"]:not([source="#d"])', ['<p><b>Volumes in the Print: </b>','</p>', '']],
         ],
-        "type of print": [
-        ['tei-monogr>tei-notegrp[lang="ar"][source="#d"]', ['<p><b>نوع دار الطباعة في الدفتر: </b>', '</p>']],
-        ['tei-monogr>tei-notegrp[lang="en"][source="#d"]', ['<p><b>Kind of Printing House in the Daftar: </b>', '</p>']],
-
+        "note": [
+          ['tei-monogr>tei-notegrp[source="#d"]>tei-note[lang="ar"]', ['<p><b>نوع دار الطباعة في الدفتر: </b>', '</p>']],
+          ['tei-monogr>tei-notegrp[source="#d"]>tei-note[lang="en"]', ['<p><b>Type of Printing House in the Daftar: </b>', '</p>']],
         ],
-        "printtype": [
-        ['tei-monogr>tei-edition>tei-objecttype[lang="en"]', ['<p><b>Is it Lithograph?: </b>', '</p>']],
-      ]
+        "objectType": [
+          ['tei-monogr>tei-edition>tei-objecttype[lang="en"]', ['<p><b>Is it a Lithograph?: </b>', '</p>']]
+        ] 
       }
     })
     c.getHTML5('https://projectnaggari.github.io/naggari_source/TEI_Printed/naggari_printsBiblStruct_Master.xml', function(data) {

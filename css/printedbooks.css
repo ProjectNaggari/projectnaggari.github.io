@@ -132,9 +132,19 @@ tei-biblstruct > div.show {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-tei-biblstruct > div.show > img {
+tei-biblstruct > div.show img {
+  border: thin solid silver;
+  display: block;
   height: 400px;
   margin: auto;
+  text-align: center;
+}
+tei-biblstruct > div.show > div.image > span {
+  display: block;
+  text-align: center;
+}
+tei-biblstruct > div.show > div.image tei-ref {
+  padding-left: 1em;
 }
 tei-biblstruct > div > tei-note[type="values"] {
   display: block;
@@ -182,8 +192,6 @@ display: none;
 
 }
 
-
-
 i {
 font-style: italic;
 }
@@ -216,6 +224,10 @@ tei-imprint {
 
 tei-monogr tei-biblscope[unit="page"] {
   display: block;
+}
+
+tei-monogr tei-ref {
+  display: none;
 }
 
 .ar,.en {
