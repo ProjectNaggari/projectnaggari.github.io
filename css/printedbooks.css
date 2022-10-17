@@ -104,7 +104,7 @@ tei-hi[rend=italic] { font-style: italic; }
 
 tei-biblstruct > p {
   display: grid;
-  grid-template-columns: .5fr .5fr 1.6fr 2fr .4fr 1fr;
+  grid-template-columns: .3fr .7fr .7fr 2fr 2fr .6fr 1fr;
   column-gap: 1em;
   margin-left: 60px;
   margin-right: 60px;
@@ -121,12 +121,23 @@ tei-biblstruct > p > tei-measure {
   text-align: right;
 }
 
+tei-biblstruct > p span.toggle {
+  cursor: pointer;
+  display: inline-block;
+  transition: transform .5s;
+}
+
+tei-biblstruct > p span.toggle.open {
+  transform: rotate(90deg);
+}
+
 tei-biblstruct > p > * {
   display:inline;
 }
 
 tei-biblstruct > div {
   display: none;
+  transition: all 250ms;
 }
 tei-biblstruct > div.show {
   display: grid;
@@ -163,16 +174,6 @@ tei-biblstruct > div > tei-note[type="values"] > * {
 }
 tei-measure {
   display: block;
-}
-tei-biblstruct[type="row"]>p>tei-title[lang="ar-Latn-x-lc"] {
-  cursor: pointer;
-  text-decoration: underline;     
-  text-decoration-color: blue; 
-}
-tei-biblstruct > div tei-idno {
-  cursor: pointer;
-  text-decoration: underline;     
-  text-decoration-color: blue; 
 }
 
 tei-biblstruct > p > img {

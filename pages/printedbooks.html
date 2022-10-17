@@ -5,9 +5,19 @@
   <title>Project Naggari</title>
   <link rel="stylesheet" href="../css/printedbooks.css">
   <script src="../js/CETEI.js"></script>
-  <script src="../js/click.js"></script>
 
   <script>
+    const toggleView = function(event) {
+      if (event.target.parentElement.parentElement.nextElementSibling.classList.contains('show')) {
+        event.target.classList.remove('open');
+        event.target.parentElement.parentElement.nextElementSibling.classList.remove('show');
+      } else {
+        event.target.classList.add('open');
+        setTimeout(() => {
+          event.target.parentElement.parentElement.nextElementSibling.classList.add('show');
+        }, 300);
+      }
+    }
     let c = new CETEI();
     c.removeBehavior("tei","note");
     c.addBehaviors({
@@ -17,26 +27,33 @@
           let p = document.createElement('p');
           row.appendChild(p);
 
-          let vol = e.querySelector('tei-monogr>tei-imprint>tei-biblscope[source="#d"][lang="ar"]');
+          const control = document.createElement('span');
+          const arrow = document.createElement('span');
+          arrow.innerHTML = '▶︎';
+          arrow.classList.add('toggle');
+          control.appendChild(arrow);
+          p.appendChild(control);
+
+          const vol = e.querySelector('tei-monogr>tei-imprint>tei-biblscope[source="#d"][lang="ar"]');
           if (vol && !vol.hasAttribute('data-empty')) {
             p.appendChild(vol.cloneNode(true));
           } else {
             p.appendChild(document.createElement('span'));
           }
 
-          let type = e.querySelector('tei-monogr>tei-notegrp>tei-note[lang="ar"]');
+          const type = e.querySelector('tei-monogr>tei-notegrp>tei-note[lang="ar"]');
           if (type && !type.hasAttribute('data-empty')) {
             p.appendChild(type.cloneNode(true));
           } else {
             p.appendChild(document.createElement('span'));
           }
 
-          let titles = e.querySelectorAll('tei-monogr>tei-title[source="#d"]');
+          const titles = e.querySelectorAll('tei-monogr>tei-title[source="#d"]');
           Array.from(titles).reverse().forEach(title => {
             p.appendChild(title.cloneNode(true));
           });
 
-          let price = e.querySelector('tei-note>tei-measuregrp>tei-measure[source="#d"]>tei-num[lang="ar"]');
+          const price = e.querySelector('tei-note>tei-measuregrp>tei-measure[source="#d"]>tei-num[lang="ar"]');
           if (!price?.hasAttribute('data-empty')) {
             p.appendChild(price.cloneNode(true));
           } else {
@@ -105,8 +122,24 @@
           return row;
         },
         "biblScope": [
-          ['[source="#d"][lang="ar"]', ['','ج']]
+          ['tei-imprint>tei-biblscope[lang="ar"][source="#d"][unit="volume"]:not([data-empty])', ['<p><b>اجزاء في الدفتر: </b>','</p>', '']],
+          ['tei-imprint>tei-biblscope[lang="ar-Latn-x-lc"][source="#d"][unit="volume"]:not([data-empty])', ['<p><b>Volumes in the Daftar: </b>','</p>', '']],
+          ['tei-imprint>tei-biblscope[lang="ar-Latn-x-lc"][unit="volume"]:not([source="#d"]):not([data-empty])', ['<p><b>Volumes in the Print: </b>','</p>', '']],
+          ['[source="#d"][lang="ar"]', ['','ج']],
         ],
+        "date": [
+          ['tei-imprint>tei-date[lang="ar"][type="hijri"]:not([data-empty])', ['<p><b>تاريخ الطباعة  بالتقويم الهجري: </b>', '</p>', '']],
+          ['tei-imprint>tei-date[lang="en"][type="gregorian"]:not([data-empty])', ['<p><b>Date of Publication in Gregorian Years: </b>','</p>', '']],
+          ['tei-imprint>tei-date[lang="en"][type="taqriz/tarikh"]:not([data-empty])', ['<p><b>Date of Chronogram in Hijri Years: </b>','</p>', '']],
+
+        ],
+        "note": [
+          ['tei-monogr>tei-notegrp[source="#d"]>tei-note[lang="ar"]', ['<p><b>نوع دار الطباعة في الدفتر: </b>', '</p>']],
+          ['tei-monogr>tei-notegrp[source="#d"]>tei-note[lang="en"]', ['<p><b>Type of Printing House in the Daftar: </b>', '</p>']],
+        ],
+        "objectType": [
+          ['tei-monogr>tei-edition>tei-objecttype[lang="en"]', ['<p><b>Is it a Lithograph?: </b>', '</p>']]
+        ], 
         "persName": [
           ['tei-author>tei-persname[lang="ar-Latn-x-lc"]', ['<b>Author: </b>','']],
           ['tei-author>tei-persname[lang=ar]', ['<b>المؤلف: </b>','']],
@@ -123,11 +156,8 @@
           ['tei-imprint>tei-pubplace[lang="ar-Latn-x-lc"]', ['<b>Place of Publication: </b>','']],
           ['_', ['(', ')']]
         ],
-        "date": [
-          ['tei-imprint>tei-date[lang="ar"][type="hijri"]', ['<p><b>تاريخ الطباعة  بالتقويم الهجري: </b>', '</p>', '']],
-          ['tei-imprint>tei-date[lang="en"][type="gregorian"]', ['<p><b>Date of Publication in Gregorian Years: </b>','</p>', '']],
-          ['tei-imprint>tei-date[lang="en"][type="taqriz/tarikh"]', ['<p><b>Date of Chronogram in Hijri Years: </b>','</p>', '']],
-
+        "ref": [
+          ['[target]', ['<a href="$rw@target" target="_blank">','</a>']]
         ],
         "respStmt": function(elt) {
           const result = document.createDocumentFragment();
@@ -147,31 +177,16 @@
           ['tei-monogr>tei-title[lang="ar-Latn-x-lc"]:not([source="#d"])', ['<p><b>Print Title: </b>', '</p>']],
           ['tei-monogr>tei-title[lang="ar"]:not([source="#d"])', ['<p><b>العنوان في النسخة: </b>', '</p>']]
 
-        ],
-        "biblScope": [
-          ['tei-imprint>tei-biblscope[lang="ar"][source="#d"][unit="volume"]', ['<p><b>اجزاء في الدفتر: </b>','</p>', '']],
-          ['tei-imprint>tei-biblscope[lang="ar-Latn-x-lc"][source="#d"][unit="volume"]', ['<p><b>Volumes in the Daftar: </b>','</p>', '']],
-          ['tei-imprint>tei-biblscope[lang="ar-Latn-x-lc"][unit="volume"]:not([source="#d"])', ['<p><b>Volumes in the Print: </b>','</p>', '']],
-        ],
-        "note": [
-          ['tei-monogr>tei-notegrp[source="#d"]>tei-note[lang="ar"]', ['<p><b>نوع دار الطباعة في الدفتر: </b>', '</p>']],
-          ['tei-monogr>tei-notegrp[source="#d"]>tei-note[lang="en"]', ['<p><b>Type of Printing House in the Daftar: </b>', '</p>']],
-        ],
-        "objectType": [
-          ['tei-monogr>tei-edition>tei-objecttype[lang="en"]', ['<p><b>Is it a Lithograph?: </b>', '</p>']]
-        ] 
+        ]
       }
     })
     c.getHTML5('https://projectnaggari.github.io/naggari_source/TEI_Printed/naggari_printsBiblStruct_Master.xml', function(data) {
       document.querySelector("div#main").appendChild(data);
-      const titles = document.querySelectorAll('tei-title[lang="ar-Latn-x-lc"]');
-      titles.forEach(title => {
-        title.addEventListener("click", showData);
-      });
-      const idnos = document.querySelectorAll('div>tei-analytic>tei-idno');
-      idnos.forEach(idno => {
-        idno.addEventListener('click', hideData);
-      });
+      const toggles = document.querySelectorAll('span.toggle');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', toggleView);
+      })
+
     });</script>
 
     
