@@ -13,9 +13,7 @@
         event.target.parentElement.parentElement.nextElementSibling.classList.remove('show');
       } else {
         event.target.classList.add('open');
-        setTimeout(() => {
-          event.target.parentElement.parentElement.nextElementSibling.classList.add('show');
-        }, 300);
+        event.target.parentElement.parentElement.nextElementSibling.classList.add('show');
       }
     }
     let c = new CETEI();

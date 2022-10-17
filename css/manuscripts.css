@@ -1,5 +1,6 @@
 body {
   background-color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .sidenav {
@@ -159,6 +160,5 @@ tei-div#nReflect {
   margin-bottom: 1.5em;
   font-weight: bold;
   font-size: x-large;
-  font-family: serif;
   word-wrap: break-word;
 }

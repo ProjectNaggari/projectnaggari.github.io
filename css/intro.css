@@ -1,5 +1,6 @@
 body {
     background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 60px;
     margin-right: 60px;
     font-size: 20px;
@@ -79,7 +80,6 @@ body {
     margin-right: auto;
     margin-top: 1.33em;
     font-weight: bold;
-    font-family: serif;
     word-wrap: break-word;
   }
   
@@ -90,7 +90,6 @@ body {
     margin-right: auto;
     margin-top: 1.33em;
     font-weight: bold;
-    font-family: serif;
     word-wrap: break-word;
   }
   
@@ -101,7 +100,6 @@ body {
     margin-right: auto;
     margin-top: 1.33em;
     font-weight: bold;
-    font-family: serif;
     word-wrap: break-word;
   }
   
@@ -154,7 +152,6 @@ body {
     margin-bottom: 1.5em;
     font-weight: bold;
     font-size: x-large;
-    font-family: serif;
     word-wrap: break-word;
   }
   
@@ -167,7 +164,6 @@ body {
     margin-top: 1.33em;
     font-weight: bold;
     font-size: x-large;
-    font-family: serif;
     word-wrap: break-word;
 
 }
@@ -201,7 +197,6 @@ tei-div#nSource{
     margin-top: 1.33em;
     font-weight: bold;
     font-size: x-large;
-    font-family: serif;
     word-wrap: break-word;
 
   }
