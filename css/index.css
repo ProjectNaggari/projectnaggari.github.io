@@ -13,7 +13,7 @@ body::after {
   opacity: 0.15;
   position: absolute;
   top: 0;
-  bottom: -100%;
+  bottom: -80%;
   right: 15px;
   left: 0;
   height: auto;
