@@ -11,7 +11,7 @@ body::after {
   opacity: 0.15;
   position: absolute;
   top: 0;
-  bottom: -3500%;
+  bottom: -3300%;
   right: 15px;
   left: 0;
   height: auto;
