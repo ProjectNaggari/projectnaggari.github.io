@@ -5,6 +5,24 @@ body {
   line-height: 1.2;
 }
 
+body::after {
+  background: url("../img/n1t10_v1-11_possiblebackground.jpg");
+  content: "";
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  bottom: -10%;
+  right: 15px;
+  left: 0;
+  height: auto;
+  z-index: -1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
