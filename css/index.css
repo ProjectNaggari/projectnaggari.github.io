@@ -10,10 +10,10 @@ body {
 body::after {
   background: url("../img/n1t10_v1-11_possiblebackground.jpg");
   content: "";
-  opacity: 0.1;
+  opacity: 0.15;
   position: absolute;
   top: 0;
-  bottom: -150%;
+  bottom: -100%;
   right: 15px;
   left: 0;
   height: auto;
