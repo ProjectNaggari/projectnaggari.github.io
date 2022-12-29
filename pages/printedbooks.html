@@ -51,7 +51,7 @@
             p.appendChild(title.cloneNode(true));
           });
 
-          const sale = e.querySelector('tei-note>tei-measuregrp>tei-measure[source="???"]>tei-num[lang="ar"]');
+          const sale = e.querySelector('tei-note>tei-measuregrp>tei-measure[n="valueincar"]>tei-num[lang="ar"]');
           if (!sale?.hasAttribute('data-empty')) {
             p.appendChild(sale.cloneNode(true));
           } else {
