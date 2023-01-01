@@ -137,7 +137,20 @@
         "note": [
           ['tei-monogr>tei-notegrp[source="#d"]>tei-note[lang="ar"]', ['<p><b>نوع دار الطباعة في الدفتر: </b>', '</p>']],
           ['tei-monogr>tei-notegrp[source="#d"]>tei-note[lang="en"]', ['<p><b>Type of Printing House in the Daftar: </b>', '</p>']],
-       
+          ['tei-note[type="valueInDAr"]', e => {
+            const b = document.createElement('b');
+            b.innerHTML = 'قيمة في الدفتر: '
+            e.parentElement.prepend(b);
+            e.parentElement.removeChild(e);
+            }
+          ],
+          ['tei-note[type="valueInDEn"]', e => {
+            const b = document.createElement('b');
+            b.innerHTML = 'Value in Daftar: '
+            e.parentElement.prepend(b);
+            e.parentElement.removeChild(e);
+            }
+          ]
         ],
         "objectType": [
           ['tei-monogr>tei-edition>tei-objecttype[lang="en"]', ['<p><b>Is it a Lithograph?: </b>', '</p>']]
