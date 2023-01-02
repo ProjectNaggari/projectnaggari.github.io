@@ -222,6 +222,11 @@ tei-biblstruct tei-monogr tei-note[type="remarks"] {
   display: none;
 }
 
+tei-biblstruct tei-note[type="values"] tei-measuregrp tei-measure[saleValueCEn] {
+  display: none;
+}
+
+
 /* tei-note[type="values"] tei-measurgroup tei-mesure tei-num:empty {
   display: none;
 }
