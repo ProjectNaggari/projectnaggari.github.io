@@ -157,7 +157,14 @@
             e.parentElement.prepend(b);
             e.parentElement.removeChild(e);
             }
-          ]
+          ],
+          ['tei-note[type="valueInCEn"]', e => {
+            const b = document.createElement('b');
+            b.innerHTML = 'Official Sale Value of C in English: '
+            e.parentElement.prepend(b);
+            e.parentElement.removeChild(e);
+            }
+          ],
         ],
         "objectType": [
           ['tei-monogr>tei-edition>tei-objecttype[lang="en"]', ['<p><b>Is it a Lithograph?: </b>', '</p>']]
