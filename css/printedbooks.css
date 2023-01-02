@@ -222,7 +222,7 @@ tei-biblstruct tei-monogr tei-note[type="remarks"] {
   display: none;
 }
 
-tei-biblstruct tei-note[type="values"] tei-measuregrp tei-measure[saleValueCEn] {
+tei-biblstruct tei-note[type="values"] tei-measuregrp tei-measure[n="saleValueCEn"] {
   display: none;
 }
 
