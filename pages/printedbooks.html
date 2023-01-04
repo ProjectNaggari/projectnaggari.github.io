@@ -81,6 +81,10 @@
           en.querySelectorAll('tei-note>*[data-empty]').forEach(elt => {
             elt.parentElement.parentElement.removeChild(elt.parentElement);
           });
+          // Remove measures that have empty num values
+          en.querySelectorAll('tei-measure tei-num[data-empty]').forEach(elt => {
+            elt.parentElement.remove();
+          });
           full.appendChild(en);
           // Make a child div with all of the @lang="ar-Latn-x-lc" and "en" elements removed
           const ar = document.createElement('div');
@@ -91,6 +95,14 @@
           ar.querySelectorAll('[lang="ar-Latn-x-lc"], [lang="en"]').forEach(elt => {
             elt.parentElement.removeChild(elt);
           })
+          // Remove notes that have empty paragraphs
+          ar.querySelectorAll('tei-note>*[data-empty]').forEach(elt => {
+            elt.parentElement.parentElement.removeChild(elt.parentElement);
+          });
+          // Remove measures that have empty num values
+          ar.querySelectorAll('tei-measure tei-num[data-empty]').forEach(elt => {
+            elt.parentElement.remove();
+          });
           // Make the image
           let bigimg;
           if (e.hasAttribute('facs')) {
@@ -133,6 +145,10 @@
           ['tei-imprint>tei-date[lang="en"][type="gregorian"]:not([data-empty])', ['<p><b>Date of Publication in Gregorian Years: </b>','</p>', '']],
           ['tei-imprint>tei-date[lang="en"][type="taqriz/tarikh"]:not([data-empty])', ['<p><b>Date of Chronogram in Hijri Years: </b>','</p>', '']],
 
+        ],
+        "measure": [
+          ['tei-measure[n="valueInCAr"]', ['<b>قيمة البيع الرسمي في النسخة: </b>']],
+          ['tei-measure[n="valueInCEn"]', ['<b>Official Sale Value of C in English: </b>']]
         ],
         "note": [
           ['tei-monogr>tei-notegrp[source="#d"]>tei-note[lang="ar"]', ['<p><b>نوع دار الطباعة في الدفتر: </b>', '</p>']],

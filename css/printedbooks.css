@@ -196,6 +196,12 @@ tei-biblstruct > div > tei-note[type="values"] > * {
 tei-measure {
   display: block;
 }
+tei-measure[n="valueInCAr"]>tei-note {
+  display: none;
+}
+tei-measure[n="valueInCEn"]>tei-note {
+  display: none;
+}
 
 tei-biblstruct > p > img {
   height: 70px;
