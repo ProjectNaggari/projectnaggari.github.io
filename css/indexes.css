@@ -1,21 +1,24 @@
 body {
   background-color: #ffffff;
   font-family: Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
-  background: url('../img/page_images/n1t170.jpg') no-repeat center center fixed;
-    padding-top: 50px; 
+  
 }
 
 body::after {
- 
+  background: url("../img/n1t10_v1-11_possiblebackground.jpg");
   content: "";
-  background: white;
-  opacity: 0.8;
+  opacity: 0.15;
+  position: absolute;
   top: 0;
+  bottom: -100%;
+  right: 15px;
   left: 0;
-  bottom: 10;
-  right: 0;
-  position: fixed;
+  height: auto;
   z-index: -1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .sidenav {
