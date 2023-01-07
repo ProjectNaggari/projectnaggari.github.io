@@ -1,6 +1,6 @@
 body {
   background-color: #ffffff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
   font-size: 120%;
   line-height: 1.2;
 }
