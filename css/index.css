@@ -8,7 +8,7 @@ body {
 }
 
 body::after {
-  background: url("../img/page_images/n1t108.jpg");
+  background: url("../img/page_images/n1t215.jpg");
   content: "";
   opacity: 0.15;
   position: absolute;
