@@ -7,11 +7,7 @@ body::after {
   background: url("../img/page_images/n1t170.jpg");
   content: "";
   opacity: 0.15;
-  position: absolute;
-  top: 0;
-  bottom: -10%;
-  right: 15px;
-  left: 0;
+  position: center;
   height: auto;
   z-index: -1;
   display: block;
