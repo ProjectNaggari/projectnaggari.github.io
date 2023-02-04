@@ -267,6 +267,10 @@ tei-biblstruct tei-note[type="values"] tei-measuregrp tei-measure[n="valueInCAr"
   display: none;
 }
 
+tei-biblstruct tei-note[type="sealsOfOwners"] {
+  display: none;
+}
+
 .ar,.en {
   margin: 0 2em 0 2em;
 }
