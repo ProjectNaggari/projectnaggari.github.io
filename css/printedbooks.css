@@ -271,6 +271,15 @@ tei-biblstruct tei-note[type="sealsOfOwners"] {
   display: none;
 }
 
+tei-biblstruct tei-note[type="inscriptionsOfOwnership"] {
+  display: none;
+}
+
+tei-biblstruct tei-note[type="datesOfOwnershipInscriptions"] {
+  display: none;
+}
+
+
 .ar,.en {
   margin: 0 2em 0 2em;
 }
