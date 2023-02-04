@@ -279,6 +279,11 @@ tei-biblstruct tei-note[type="datesOfOwnershipInscriptions"] {
   display: none;
 }
 
+tei-biblstruct tei-note[type="values"] tei-measuregrp tei-measure[n="valueInCEn"] tei-note {
+  display: none;
+}
+
+
 
 .ar,.en {
   margin: 0 2em 0 2em;
